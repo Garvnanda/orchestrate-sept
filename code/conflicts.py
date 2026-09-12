@@ -1,6 +1,25 @@
+import json
+import os
+
 import data_loader
 import evidence
 import llm_client
+
+CACHE_PATH = os.path.join(os.path.dirname(__file__), "..", "evaluation", "resolution_cache.json")
+
+
+def _load_cache():
+    if os.path.exists(CACHE_PATH):
+        with open(CACHE_PATH, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def _save_cache(cache):
+    os.makedirs(os.path.dirname(CACHE_PATH), exist_ok=True)
+    with open(CACHE_PATH, "w", encoding="utf-8") as f:
+        json.dump(cache, f, indent=2)
+
 
 RESOLVER_SYSTEM_PROMPT = (
     "You give a second opinion on which of two conflicting facts about the same financial event "
@@ -123,16 +142,23 @@ def resolve_event_state(event, facts):
     return winner, fact_map[winner]
 
 
-def resolve_conflict(event, source_a, data_a, source_b, data_b):
+def resolve_conflict(event, source_a, data_a, source_b, data_b, cache=None):
     hierarchy_winner = resolve_by_hierarchy(event, source_a, data_a, source_b, data_b)
-    prompt = (
-        f"event_id={event['event_id']}, direction={event['direction']}, category={event['category']}\n"
-        f"Fact A (source={source_a}): action={data_a.get('action')}, amount={data_a.get('new_amount')}, "
-        f"date={data_a.get('new_date')}, note={data_a.get('note')}\n"
-        f"Fact B (source={source_b}): action={data_b.get('action')}, amount={data_b.get('new_amount')}, "
-        f"date={data_b.get('new_date')}, note={data_b.get('note')}"
-    )
-    resolver_result = llm_client.call_json("resolver", RESOLVER_SYSTEM_PROMPT, prompt)
+    cache_key = f"resolver:{event['event_id']}:{source_a}:{source_b}"
+    if cache is not None and cache_key in cache:
+        resolver_result = cache[cache_key]
+    else:
+        prompt = (
+            f"event_id={event['event_id']}, direction={event['direction']}, category={event['category']}\n"
+            f"Fact A (source={source_a}): action={data_a.get('action')}, amount={data_a.get('new_amount')}, "
+            f"date={data_a.get('new_date')}, note={data_a.get('note')}\n"
+            f"Fact B (source={source_b}): action={data_b.get('action')}, amount={data_b.get('new_amount')}, "
+            f"date={data_b.get('new_date')}, note={data_b.get('note')}"
+        )
+        resolver_result = llm_client.call_json("resolver", RESOLVER_SYSTEM_PROMPT, prompt)
+        if cache is not None:
+            cache[cache_key] = resolver_result
+            _save_cache(cache)
     label = resolver_result.get("winner")
     resolver_winner = source_a if label == "A" else source_b if label == "B" else None
     escalate = resolver_winner is not None and resolver_winner != hierarchy_winner
@@ -148,12 +174,13 @@ def resolve_conflict(event, source_a, data_a, source_b, data_b):
 
 
 def resolve_all_conflicts(ds, message_facts, image_facts):
+    cache = _load_cache()
     facts_by_event = build_facts_by_event(ds, message_facts, image_facts)
     conflicts = detect_conflicts(facts_by_event)
     resolutions = []
     for event_id, fact_a, fact_b in conflicts:
         event = ds.events_by_id[event_id]
-        resolutions.append(resolve_conflict(event, fact_a[0], fact_a[1], fact_b[0], fact_b[1]))
+        resolutions.append(resolve_conflict(event, fact_a[0], fact_a[1], fact_b[0], fact_b[1], cache=cache))
     return resolutions
 
 
@@ -175,25 +202,38 @@ def find_low_confidence_escalations(message_facts, image_facts):
 
 def run_verifier_escalations(ds, conflict_resolutions, message_facts, image_facts):
     """Step 8: advisory-only verifier review. Never changes any decision — logged for record."""
+    cache = _load_cache()
     reviews = []
     for r in conflict_resolutions:
         if not r["escalate_to_verifier"]:
             continue
         event = ds.events_by_id[r["event_id"]]
-        prompt = (
-            f"event_id={r['event_id']}, direction={event['direction']}, category={event['category']}\n"
-            f"Coded hierarchy picked: {r['hierarchy_winner']}\n"
-            f"Resolver instead suggested: {r['resolver_winner']} because: {r['resolver_reasoning']}"
-        )
-        review = llm_client.call_json("verifier", VERIFIER_SYSTEM_PROMPT, prompt)
+        cache_key = f"verifier:resolver_mismatch:{r['event_id']}:{r['source_a']}:{r['source_b']}"
+        if cache_key in cache:
+            review = cache[cache_key]
+        else:
+            prompt = (
+                f"event_id={r['event_id']}, direction={event['direction']}, category={event['category']}\n"
+                f"Coded hierarchy picked: {r['hierarchy_winner']}\n"
+                f"Resolver instead suggested: {r['resolver_winner']} because: {r['resolver_reasoning']}"
+            )
+            review = llm_client.call_json("verifier", VERIFIER_SYSTEM_PROMPT, prompt)
+            cache[cache_key] = review
+            _save_cache(cache)
         reviews.append({"trigger": "resolver_mismatch", **r, "verifier_review": review})
 
     for esc in find_low_confidence_escalations(message_facts, image_facts):
-        prompt = (
-            f"source={esc['source']}, event_id={esc['event_id']}\n"
-            f"Low-confidence extracted fact used in a decision: {esc['fact']}"
-        )
-        review = llm_client.call_json("verifier", VERIFIER_SYSTEM_PROMPT, prompt)
+        cache_key = f"verifier:low_confidence:{esc['source']}"
+        if cache_key in cache:
+            review = cache[cache_key]
+        else:
+            prompt = (
+                f"source={esc['source']}, event_id={esc['event_id']}\n"
+                f"Low-confidence extracted fact used in a decision: {esc['fact']}"
+            )
+            review = llm_client.call_json("verifier", VERIFIER_SYSTEM_PROMPT, prompt)
+            cache[cache_key] = review
+            _save_cache(cache)
         reviews.append({"trigger": "low_confidence", **esc, "verifier_review": review})
 
     return reviews

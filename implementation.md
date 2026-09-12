@@ -10,14 +10,14 @@ Ordered task list. Check items off as they're actually built and verified — mo
 - [x] 5. Evidence extractor — `code/evidence.py`, all 215 messages + 16 images extracted, 0 failures (4-tier fallback: AgentRouter extractor/verifier direct, translated retry, OpenRouter last resort)
 - [x] 6. Conflict detector (coded) — `code/conflicts.py`, `detect_conflicts()`/`build_facts_by_event()`
 - [x] 7. Resolver call + coded conflict-resolution hierarchy — `code/conflicts.py`, `resolve_by_hierarchy()` + `resolve_conflict()` (hierarchy always wins; resolver call fires on every detected conflict for a second opinion)
-- [ ] 8. Verifier call (advisory, logged only) — fires on low-confidence-used-fact or resolver/hierarchy mismatch
-- [ ] 9. Financial state reconstruction per user — recurring vs one-time, pending/settled/cancelled handling, dedupe linked events, confirmed-salary-on-settlement-date
-- [ ] 10. 90-day forward balance forecast engine
-- [ ] 11. Decision engine — `amount_safe_to_pay`, `affordability_status`, method eligibility filter, plan ranking (6 tie-break rules)
-- [ ] 12. Spending-changes generator — flexible-only, stop/reduce_to mutual exclusivity, max 3
-- [ ] 13. Explanation generator — deterministic fact list → LLM rewrite pass (must-include-all, no-new-facts constraint enforced)
-- [ ] 14. Output writer — draft row per request
-- [ ] 15. Standalone validator — full contract check per row, blocks write, safe-default fallback wired in from step 1 onward (not bolted on at the end)
+- [x] 8. Verifier call (advisory, logged only) — `conflicts.run_verifier_escalations()`, fires on low-confidence-used-fact or resolver/hierarchy mismatch, results cached and saved to `evaluation/verifier_log.json`
+- [x] 9. Financial state reconstruction per user — `code/reconstruct.py`, `build_resolved_events()` + `detect_recurring_series()`
+- [x] 10. 90-day forward balance forecast engine — `code/reconstruct.py`, `project_forecast_events()` + `simulate_balance()` + `min_balance_up_to()`
+- [x] 11. Decision engine — `code/decision.py`: `compute_capacity()`, `build_candidates()`, `rank_candidates()`, `decide()`
+- [x] 12. Spending-changes generator — `code/spending_changes.py`: `find_flexible_reductions()` + `try_with_spending_changes()`
+- [x] 13. Explanation generator — `code/explanation.py`: template fact list → LLM rewrite, numeric-completeness guard falls back to template if the rewrite drops/invents a number
+- [x] 14. Output writer — `code/main.py`, `build_row()` + `run()`
+- [x] 15. Standalone validator — `code/validate.py`, `validate_row()` + `safe_default_row()`
 - [ ] 16. Dry run against `dataset/sample_requests.csv` — compare against its filled columns, sanity-check divergences (not literal grading, format/style reference only per problem_statement.md)
 - [ ] 17. Full run on `dataset/requests.csv` → root-level `output.csv`, confirm 250 rows + header, exact column order
 - [ ] 18. `evaluation/usage_report.md` — generate from the actual final full-dataset run's real token/call counts per model, not estimated/fabricated numbers

@@ -70,23 +70,29 @@ def build_resolved_events(ds, message_facts, image_facts, amount_overrides):
 
 def detect_recurring_series(events_for_user, as_of_date):
     """Step 9 (part 2): 'detect recurrence only when history supports it'. Groups settled
-    history by category; a category with >=3 settled occurrences at a consistent gap is
-    'periodic' (projected forward at that cadence, last known amount). A category with
-    enough history but irregular gaps (essential variable spend like groceries/transport)
-    is 'irregular' (projected as a conservative monthly-equivalent average). Fewer than 3
-    occurrences: not enough history, no forward projection invented."""
-    settled = [
+    history plus any explicitly 'scheduled' (confirmed future) occurrence by category.
+    3+ settled occurrences at a consistent gap, OR 2+ occurrences where at least one is an
+    explicitly confirmed 'scheduled' instance (e.g. a brand-new employee's one settled
+    prorated paycheck plus their one confirmed next payment) at a plausible cadence, is
+    'periodic'. 3+ occurrences with irregular gaps (essential variable spend like groceries)
+    is 'irregular'. Fewer than that: not enough evidence, no forward projection invented.
+    'pending' is deliberately excluded here — it's uncertain, not a confirmed data point."""
+    eligible = [
         e for e in events_for_user
-        if e["status"] == "settled" and e["amount"] is not None and e["date"] <= as_of_date
+        if e["amount"] is not None and (
+            (e["status"] == "settled" and e["date"] <= as_of_date) or e["status"] == "scheduled"
+        )
     ]
     by_category = {}
-    for e in settled:
+    for e in eligible:
         by_category.setdefault(e["category"], []).append(e)
 
     series = {}
     for category, evs in by_category.items():
         evs.sort(key=lambda e: e["date"])
-        if len(evs) < 3:
+        has_scheduled_anchor = any(e["status"] == "scheduled" for e in evs)
+        min_count = 2 if has_scheduled_anchor else 3
+        if len(evs) < min_count:
             series[category] = {"type": "none", "count": len(evs)}
             continue
 
@@ -95,7 +101,9 @@ def detect_recurring_series(events_for_user, as_of_date):
         median_gap = statistics.median(gaps)
         last = evs[-1]
 
-        if median_gap >= 5 and all(median_gap * 0.5 <= g <= median_gap * 1.6 for g in gaps):
+        plausible_cadence = 5 <= median_gap <= 45
+        consistent = len(gaps) == 1 or all(median_gap * 0.5 <= g <= median_gap * 1.6 for g in gaps)
+        if median_gap >= 5 and (consistent if len(evs) >= 3 else plausible_cadence):
             series[category] = {
                 "type": "periodic",
                 "period_days": round(median_gap),
@@ -192,6 +200,37 @@ def simulate_balance(current_balance, forecast_events):
 def min_balance_up_to(current_balance, timeline, date_str):
     balances = [current_balance] + [t["balance"] for t in timeline if t["date"] <= date_str]
     return min(balances)
+
+
+def suffix_min_balance(current_balance, timeline, from_date):
+    """Min balance from from_date through the end of the timeline (inclusive). Monotonic
+    non-decreasing as from_date moves later, which find_earliest_safe_date relies on."""
+    events_before = [t for t in timeline if t["date"] < from_date]
+    balance_at_start = events_before[-1]["balance"] if events_before else current_balance
+    return min([balance_at_start] + [t["balance"] for t in timeline if t["date"] >= from_date])
+
+
+def find_earliest_safe_date(current_balance, timeline, min_balance_to_keep, amount, request_date, horizon_end):
+    """Step 11 helper: earliest date a single lump-sum payment of `amount` stays safe
+    through the rest of the 90-day forecast. None if never safe within the horizon."""
+    candidates = sorted({request_date, horizon_end} | {t["date"] for t in timeline if request_date <= t["date"] <= horizon_end})
+    for d in candidates:
+        if suffix_min_balance(current_balance, timeline, d) - amount >= min_balance_to_keep:
+            return d
+    return None
+
+
+def schedule_min_balance(current_balance, forecast_events, extra_payments):
+    """Min balance over the whole forecast window if extra_payments (list of (date, amount)
+    debits) are layered on top of the existing forecast — used to safety-check a candidate
+    installment schedule."""
+    combined = list(forecast_events) + [
+        {"date": d, "amount": -amt, "category": "_candidate_payment", "event_id": None, "source": "candidate"}
+        for d, amt in extra_payments
+    ]
+    combined.sort(key=lambda x: x["date"])
+    timeline = simulate_balance(current_balance, combined)
+    return min([current_balance] + [t["balance"] for t in timeline])
 
 
 def build_all(ds, message_facts, image_facts, amount_overrides):

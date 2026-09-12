@@ -12,6 +12,44 @@ load_dotenv()
 class ExtractionError(Exception):
     pass
 
+
+USAGE_LOG_PATH = os.path.join(os.path.dirname(__file__), "..", "evaluation", "usage_log.json")
+_usage = None
+
+
+def _ensure_usage_loaded():
+    global _usage
+    if _usage is None:
+        if os.path.exists(USAGE_LOG_PATH):
+            with open(USAGE_LOG_PATH, "r", encoding="utf-8") as f:
+                _usage = json.load(f)
+        else:
+            _usage = {}
+
+
+def _record_usage(provider, model, response):
+    usage = getattr(response, "usage", None)
+    if usage is None:
+        return
+    _ensure_usage_loaded()
+    key = f"{provider}:{model}"
+    stats = _usage.setdefault(key, {"provider": provider, "model": model, "calls": 0, "prompt_tokens": 0, "completion_tokens": 0})
+    stats["calls"] += 1
+    stats["prompt_tokens"] += getattr(usage, "prompt_tokens", 0) or 0
+    stats["completion_tokens"] += getattr(usage, "completion_tokens", 0) or 0
+    save_usage()
+
+
+def get_usage():
+    _ensure_usage_loaded()
+    return _usage
+
+
+def save_usage():
+    os.makedirs(os.path.dirname(USAGE_LOG_PATH), exist_ok=True)
+    with open(USAGE_LOG_PATH, "w", encoding="utf-8") as f:
+        json.dump(_usage, f, indent=2)
+
 BASE_URL = os.environ.get("AGENTROUTER_BASE_URL", "https://agentrouter.org/v1")
 USER_AGENT = os.environ.get("AGENTROUTER_USER_AGENT")
 
@@ -53,7 +91,7 @@ def _image_data_url(image_path):
     return f"data:image/png;base64,{b64}"
 
 
-def _chat_json(client, model, system_prompt, text_prompt, image_path=None, max_retries=1):
+def _chat_json(client, model, system_prompt, text_prompt, image_path=None, max_retries=1, provider="agentrouter"):
     if image_path:
         user_content = [
             {"type": "text", "text": text_prompt},
@@ -75,6 +113,7 @@ def _chat_json(client, model, system_prompt, text_prompt, image_path=None, max_r
         except openai.APIError as e:
             last_error = e
             continue
+        _record_usage(provider, model, response)
         if not response.choices or response.choices[0].message.content is None:
             last_error = f"empty response (finish_reason={getattr(response.choices[0], 'finish_reason', None) if response.choices else 'no choices'})"
             continue
@@ -87,11 +126,14 @@ def _chat_json(client, model, system_prompt, text_prompt, image_path=None, max_r
 
 
 def call_json(role, system_prompt, text_prompt, image_path=None, max_retries=1):
-    return _chat_json(get_client(), MODELS[role], system_prompt, text_prompt, image_path, max_retries)
+    return _chat_json(get_client(), MODELS[role], system_prompt, text_prompt, image_path, max_retries, provider="agentrouter")
 
 
 def call_json_openrouter(system_prompt, text_prompt, image_path=None, max_retries=1):
-    return _chat_json(get_openrouter_client(), OPENROUTER_MODEL, system_prompt, text_prompt, image_path, max_retries)
+    return _chat_json(
+        get_openrouter_client(), OPENROUTER_MODEL, system_prompt, text_prompt, image_path, max_retries,
+        provider="openrouter",
+    )
 
 
 def call_json_with_fallback(role, fallback_role, system_prompt, text_prompt, image_path=None):

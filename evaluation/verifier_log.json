@@ -1,0 +1,16 @@
+[
+  {
+    "trigger": "resolver_mismatch",
+    "event_id": "event_4535",
+    "source_a": "event:event_4535",
+    "source_b": "image:image_08",
+    "hierarchy_winner": "event:event_4535",
+    "resolver_winner": "image:image_08",
+    "resolver_reasoning": "Fact B is a newer receipt-confirmed payment with a concrete amount, while Fact A is an older confirmation with no amount; for a debit expense, the safer interpretation is to trust the settled amount.",
+    "escalate_to_verifier": true,
+    "verifier_review": {
+      "looks_sound": false,
+      "reasoning": "For a debit expense, the coded pick anchors to an older confirmation with no amount, which cannot substantiate the debit amount; the newer receipt-confirmed payment with a concrete settled amount is the more reliable basis, so the resolver's suggestion appears better founded (assuming image_08 pertains to the same transaction)."
+    }
+  }
+]

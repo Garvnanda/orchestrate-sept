@@ -1,0 +1,34 @@
+{
+  "resolver:event_1442:event:event_1442:image:image_02": {
+    "winner": "B",
+    "reasoning": "Receipt confirms a documented rent amount (Rs 2,00,000); the scheduled row has no amount, and the safer interpretation recognizes the higher documented expense."
+  },
+  "resolver:event_1786:event:event_1786:image:image_05": {
+    "winner": "B",
+    "reasoning": "Fact B provides a confirmed bill amount and due date from the bill summary, while Fact A is only a pending original row with no amount; for a debit expense, the safer interpretation is that the expense occurs at the confirmed amount."
+  },
+  "resolver:event_4535:event:event_4535:image:image_08": {
+    "winner": "B",
+    "reasoning": "Fact B is a newer receipt-confirmed payment with a concrete amount, while Fact A is an older confirmation with no amount; for a debit expense, the safer interpretation is to trust the settled amount."
+  },
+  "resolver:event_4994:event:event_4994:message:message_39": {
+    "winner": "B",
+    "reasoning": "Fact B explicitly says the refund is not yet credited and gives no amount; for a credit, the safer interpretation is not to assume income until settled. Fact A is only a pending CSV row."
+  },
+  "resolver:event_6859:event:event_6859:image:image_11": {
+    "winner": "B",
+    "reasoning": "Fact B provides a confirmed provisional bill amount (3650.00) for the healthcare debit, while Fact A has no amount and is only scheduled; for a debit, assuming the expense at the stated amount is financially safer."
+  },
+  "resolver:event_10521:event:event_10521:message:message_86": {
+    "winner": "A",
+    "reasoning": "Fact A is the settled record for this transport debit; Fact B confirms a salary credit (income), which mismatches the event's direction/category and cannot override the settled expense. Priority favors settled records."
+  },
+  "resolver:event_10521:message:message_86:image:image_16": {
+    "winner": "B",
+    "reasoning": "Fact B matches the debit transport event (invoice/charging session); Fact A describes a salary credit, inconsistent with the event's debit/transport nature."
+  },
+  "verifier:resolver_mismatch:event_4535:event:event_4535:image:image_08": {
+    "looks_sound": false,
+    "reasoning": "For a debit expense, the coded pick anchors to an older confirmation with no amount, which cannot substantiate the debit amount; the newer receipt-confirmed payment with a concrete settled amount is the more reliable basis, so the resolver's suggestion appears better founded (assuming image_08 pertains to the same transaction)."
+  }
+}
