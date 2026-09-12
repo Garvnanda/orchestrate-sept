@@ -13,7 +13,7 @@ class ExtractionError(Exception):
     pass
 
 
-USAGE_LOG_PATH = os.path.join(os.path.dirname(__file__), "..", "evaluation", "usage_log.json")
+USAGE_LOG_PATH = os.path.join(os.path.dirname(__file__), "evaluation", "usage_log.json")
 _usage = None
 
 

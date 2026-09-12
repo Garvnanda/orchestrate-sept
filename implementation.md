@@ -18,11 +18,11 @@ Ordered task list. Check items off as they're actually built and verified — mo
 - [x] 13. Explanation generator — `code/explanation.py`: template fact list → LLM rewrite, numeric-completeness guard falls back to template if the rewrite drops/invents a number
 - [x] 14. Output writer — `code/main.py`, `build_row()` + `run()`
 - [x] 15. Standalone validator — `code/validate.py`, `validate_row()` + `safe_default_row()`
-- [ ] 16. Dry run against `dataset/sample_requests.csv` — compare against its filled columns, sanity-check divergences (not literal grading, format/style reference only per problem_statement.md)
-- [ ] 17. Full run on `dataset/requests.csv` → root-level `output.csv`, confirm 250 rows + header, exact column order
-- [ ] 18. `evaluation/usage_report.md` — generate from the actual final full-dataset run's real token/call counts per model, not estimated/fabricated numbers
-- [ ] 19. Package `code.zip` — code/, README with setup+run instructions, `evaluation/` folder, confirm no `.env`/secrets included
-- [ ] 20. Judge-interview prep — pick one fully-traced example request (message-in → output-row-out, name what each stage consumed/produced), 3 defendable numbers/thresholds with evidence from the actual run, one monitoring signal + drift action (e.g. validator-fallback rate, or verifier-escalation rate vs total requests)
+- [x] 16. Dry run against `dataset/sample_requests.csv` — request_01 exact match, request_02 documented divergence (see technical.md), done as part of step 11's build
+- [x] 17. Full run on `dataset/requests.csv` → root-level `output.csv`, 250 rows + header, exact column order, 0 safe-default fallbacks on the final tracked run
+- [x] 18. `code/evaluation/usage_report.md` — real numbers from a full cache-clear + fresh tracked rerun (490 calls, 459,716 tokens)
+- [x] 19. Package `code.zip` — code/ (incl. `evaluation/`), README, requirements.txt, .env.example, design docs. Verified: no `.env`, no `log.txt`, no `dataset/`, no `__pycache__`
+- [x] 20. Judge-interview prep — see done.md's final entry: full `request_01` trace, 3 defendable numbers, 1 monitoring signal
 
 ## Blocking items — RESOLVED
 

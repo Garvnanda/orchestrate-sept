@@ -1,0 +1,23 @@
+{
+  "agentrouter:deepseek-v4-flash": {
+    "provider": "agentrouter",
+    "model": "deepseek-v4-flash",
+    "calls": 443,
+    "prompt_tokens": 122639,
+    "completion_tokens": 303379
+  },
+  "openrouter:nvidia/nemotron-3-super-120b-a12b:free": {
+    "provider": "openrouter",
+    "model": "nvidia/nemotron-3-super-120b-a12b:free",
+    "calls": 45,
+    "prompt_tokens": 12751,
+    "completion_tokens": 16192
+  },
+  "agentrouter:glm-5.3": {
+    "provider": "agentrouter",
+    "model": "glm-5.3",
+    "calls": 2,
+    "prompt_tokens": 471,
+    "completion_tokens": 4284
+  }
+}

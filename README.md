@@ -54,9 +54,9 @@ python code/main.py    # run from the repository root — writes output.csv here
 ```
 
 - All money math, forecasting, ranking, and the 90-day safety check are 100% deterministic Python — no LLM ever touches a number. LLM calls are narrowly scoped to: reading messages/images into structured facts, a second-opinion check on detected factual conflicts, and rewriting a pre-computed fact list into fluent prose for `decision_explanation` (never allowed to add or drop a fact).
-- Every stage caches its LLM calls to `evaluation/*.json` — a rerun with warm caches makes zero new API calls and reproduces the same `output.csv`.
+- Every stage caches its LLM calls to `code/evaluation/*.json` — a rerun with warm caches makes zero new API calls and reproduces the same `output.csv`.
 - Module map: `code/data_loader.py` (parse CSVs) → `code/currency.py` (FX) → `code/llm_client.py` (AgentRouter + OpenRouter clients) → `code/evidence.py` (extraction) → `code/conflicts.py` (conflict resolution + verifier) → `code/reconstruct.py` (financial state + 90-day forecast) → `code/decision.py` (affordability decision) → `code/spending_changes.py` (optional-changes upgrade pass) → `code/explanation.py` (grounded prose) → `code/validate.py` (contract enforcement) → `code/main.py` (orchestrates all of the above, writes `output.csv`).
-- See `evaluation/usage_report.md` for the token/cost breakdown of the run that produced the submitted `output.csv`.
+- See `code/evaluation/usage_report.md` for the token/cost breakdown of the run that produced the submitted `output.csv`.
 
 ## Important File Locations
 

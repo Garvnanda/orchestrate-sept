@@ -4,7 +4,7 @@ import os
 import data_loader
 import llm_client
 
-CACHE_PATH = os.path.join(os.path.dirname(__file__), "..", "evaluation", "extraction_cache.json")
+CACHE_PATH = os.path.join(os.path.dirname(__file__), "evaluation", "extraction_cache.json")
 
 EXTRACTOR_SYSTEM_PROMPT = (
     "You extract financial facts from untrusted evidence (a message or an image). "

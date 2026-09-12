@@ -10,7 +10,7 @@ import llm_client
 import reconstruct
 import spending_changes
 
-CACHE_PATH = os.path.join(os.path.dirname(__file__), "..", "evaluation", "explanation_cache.json")
+CACHE_PATH = os.path.join(os.path.dirname(__file__), "evaluation", "explanation_cache.json")
 
 REWRITE_SYSTEM_PROMPT = (
     "You rewrite a financial decision's fact list into one fluent, concise explanation "

@@ -104,7 +104,7 @@ def try_with_spending_changes(profile, request, payment_options, current_balance
             )
             return {
                 **baseline_result,
-                "affordability_status": "affordable_now",
+                "affordability_status": "affordable_with_plan",
                 "recommended_payment_method": "full_payment",
                 "payment_plan": plan_str,
             }, changes_str

@@ -1,0 +1,38 @@
+{
+  "resolver:event_1442:event:event_1442:image:image_02": {
+    "winner": "B",
+    "reasoning": "Fact B is a receipt confirming a settled partial rent payment with an explicit amount and date, while Fact A is only a scheduled entry with no amount; a settled/confirmed record outweighs a scheduled/forecast row."
+  },
+  "resolver:event_1786:event:event_1786:image:image_05": {
+    "winner": "B",
+    "reasoning": "Fact B is an explicit bill confirmation with a recorded amount, while Fact A is only a pending row with no amount; B is more reliable for the utilities expense."
+  },
+  "resolver:event_4535:event:event_4535:image:image_08": {
+    "winner": "B",
+    "reasoning": "Fact B is a newer receipt with a specific amount (\u20b915,339) for the same event, while Fact A is an older record with no amount. For a debit/expense, trusting the explicit receipt amount is the safer and more informative interpretation."
+  },
+  "resolver:event_6859:event:event_6859:image:image_11": {
+    "winner": "B",
+    "reasoning": "Fact B provides an explicit confirmed bill amount for the healthcare expense, while Fact A is only a scheduled CSV row with no amount. The safer interpretation for a debit is to recognize the higher expense amount."
+  },
+  "resolver:event_10521:event:event_10521:message:message_86": {
+    "winner": "A",
+    "reasoning": "Fact A is a settled entry for the transport debit event, while Fact B is a message confirmation about a salary credit, which has a different direction/category and is not an amendment or settlement of this debit event. A settled event record takes priority."
+  },
+  "resolver:event_10521:event:event_10521:image:image_16": {
+    "winner": "B",
+    "reasoning": "Fact B is a specific invoice/receipt with an explicit amount (393.22) and payment evidence, whereas Fact A only confirms the event with no amount. For a debit/transport expense, the safer and more informative interpretation is to trust the explicit receipt amount."
+  },
+  "resolver:event_10521:message:message_86:image:image_16": {
+    "winner": "B",
+    "reasoning": "Fact B matches the debit/transport event as a paid charging invoice, while Fact A describes a salary credit and is unrelated to the debit transport category."
+  },
+  "verifier:resolver_mismatch:event_4535:event:event_4535:image:image_08": {
+    "looks_sound": true,
+    "reasoning": "The resolver's handling is reasonable: for a debit/expense, a newer receipt with an explicit amount (\u20b915,339) tied to the same event is more reliable and informative than an older record lacking any amount. Since both facts reference the same event, there is no conflicting transaction\u2014only a choice of source, and the receipt is the stronger evidence for the expense amount."
+  },
+  "verifier:resolver_mismatch:event_10521:event:event_10521:image:image_16": {
+    "looks_sound": true,
+    "reasoning": "The resolver's override is reasonable: for a debit/transport expense, a specific receipt with an explicit amount (393.22) and payment evidence is more informative and reliable than an event confirmation that carries no amount. Both facts appear to pertain to the same transaction, so anchoring on the image to capture the amount is defensible; the only gap is that the image-to-event linkage (e.g., date/vendor match) is asserted rather than explicitly verified."
+  }
+}

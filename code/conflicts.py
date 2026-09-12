@@ -5,7 +5,7 @@ import data_loader
 import evidence
 import llm_client
 
-CACHE_PATH = os.path.join(os.path.dirname(__file__), "..", "evaluation", "resolution_cache.json")
+CACHE_PATH = os.path.join(os.path.dirname(__file__), "evaluation", "resolution_cache.json")
 
 
 def _load_cache():
