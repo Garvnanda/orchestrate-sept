@@ -212,7 +212,7 @@ def _self_check():
     assert len(resolved_events) < len(ds.events), "expected some events superseded by linked_event_id chains"
     superseded_removed = len(ds.events) - len(resolved_events)
 
-    req = ds.requests_by_id["request_01"]
+    req = next(r for r in ds.sample_requests if r["request_id"] == "request_01")
     user = ds.profiles["user_01"]
     series = detect_recurring_series(events_by_user["user_01"], req["request_date"])
     forecast = project_forecast_events(req["request_date"], events_by_user["user_01"], series)
