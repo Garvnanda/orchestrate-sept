@@ -4,12 +4,12 @@ Ordered task list. Check items off as they're actually built and verified — mo
 
 - [x] 0. Scaffold `.env.example` (var names only, no real values) + confirm real `.env` is gitignored (already done: `log.txt`, `.env`, `__pycache__/` in `.gitignore`)
 - [x] 1. Data loader — parse all `dataset/*.csv` into plain dicts/lists (stdlib `csv`), join by `user_id`/`request_id`/`related_event_id`
-- [ ] 2. Blank-amount resolution — `financial_events.amount` blank → find via `images.csv.related_event_id` → extractor call on image
-- [ ] 3. Currency normalization module — exact dated-rate lookup, no invented rates
-- [ ] 4. AgentRouter client wrapper — OpenAI-compatible SDK, `base_url`, schema-enforced structured output, retry-on-schema-failure, response caching to local JSON keyed by message_id/image_id
-- [ ] 5. Evidence extractor — one call per message + per image, writes `{event_id, action, new_amount, new_date, confidence, note}`
-- [ ] 6. Conflict detector (coded) — flags same event/request with disagreeing facts across sources
-- [ ] 7. Resolver call + coded conflict-resolution hierarchy (hierarchy always wins; resolver call only fires on detected conflicts)
+- [x] 2. Blank-amount resolution — `code/evidence.py` (image → extractor call → cached JSON)
+- [x] 3. Currency normalization module — exact dated-rate lookup, no invented rates
+- [x] 4. AgentRouter client wrapper — OpenAI-compatible SDK, `base_url`, schema-enforced structured output, retry-on-schema-failure, response caching to local JSON keyed by message_id/image_id
+- [x] 5. Evidence extractor — `code/evidence.py`, all 215 messages + 16 images extracted, 0 failures (4-tier fallback: AgentRouter extractor/verifier direct, translated retry, OpenRouter last resort)
+- [x] 6. Conflict detector (coded) — `code/conflicts.py`, `detect_conflicts()`/`build_facts_by_event()`
+- [x] 7. Resolver call + coded conflict-resolution hierarchy — `code/conflicts.py`, `resolve_by_hierarchy()` + `resolve_conflict()` (hierarchy always wins; resolver call fires on every detected conflict for a second opinion)
 - [ ] 8. Verifier call (advisory, logged only) — fires on low-confidence-used-fact or resolver/hierarchy mismatch
 - [ ] 9. Financial state reconstruction per user — recurring vs one-time, pending/settled/cancelled handling, dedupe linked events, confirmed-salary-on-settlement-date
 - [ ] 10. 90-day forward balance forecast engine

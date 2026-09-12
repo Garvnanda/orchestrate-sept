@@ -60,6 +60,7 @@ def load_all(dataset_dir="dataset"):
     events_by_user = {}
     for row in events:
         row["amount"] = _float_or_none(row["amount"])
+        row["minimum_allowed_amount"] = _float_or_none(row["minimum_allowed_amount"])
         events_by_id[row["event_id"]] = row
         events_by_user.setdefault(row["user_id"], []).append(row)
 

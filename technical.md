@@ -8,7 +8,7 @@ Status: reflects decisions locked as of this writing. Update this file whenever 
 - LLM access: `openai` Python SDK pointed at AgentRouter's OpenAI-compatible endpoint.
   - `base_url = "https://agentrouter.org/v1"`
   - API key read from env var `AGENTROUTER_API_KEY` (confirmed).
-  - Models confirmed available (only these 3 usable for now): `deepseek-v4-flash`, `claude-opus-5`, `gpt-5.6-sol`.
+  - Models confirmed available: only `deepseek-v4-flash` and `glm-5.3` are up as of 2026-09-12 (rest reported down).
 - Entry point: `code/main.py`.
 
 ## Model-per-role split
@@ -16,10 +16,12 @@ Status: reflects decisions locked as of this writing. Update this file whenever 
 | Role | Model | Fires when |
 |---|---|---|
 | Extractor | deepseek-v4-flash | Every message (215 rows) and every image (16 rows) — always runs, this is the only path that reads that evidence at all |
-| Resolver | gpt-5.6-sol | Only when two evidence sources disagree on amount/date/status for the same `event_id`/`request_id` |
-| Verifier | claude-opus-5 | Only when extractor confidence=`low` on a fact actually used in the decision, OR resolver's suggested winner contradicts the coded conflict-hierarchy |
+| Resolver | deepseek-v4-flash | Only when two evidence sources disagree on amount/date/status for the same `event_id`/`request_id` (reuses extractor's model — only 2 models available) |
+| Verifier | glm-5.3 | Only when extractor confidence=`low` on a fact actually used in the decision, OR resolver's suggested winner contradicts the coded conflict-hierarchy (reserved as the "better" of the 2 available models for the hardest/rarest case) |
 
-All three are advisory to varying degrees:
+**Fallback chain (message extraction only, added after real content-moderation failures):** AgentRouter blocks ~21% of messages with a `content-blocked` error regardless of which of the 2 available models is asked, and regardless of prompt framing (confirmed by testing direct extraction, the other model, and a plain translation request — all blocked identically on the same content). Retry order per message: (1) extractor role direct, (2) verifier role direct (via `call_json_with_fallback`), (3) translate to English via AgentRouter then retry extraction, (4) OpenRouter (`nvidia/nemotron-3-super-120b-a12b:free` — the first free-tier candidate tried, `meta-llama/llama-3.3-70b-instruct:free`, turned out to be retired from the free tier, and the second, `google/gemma-4-31b-it:free`, was rate-limited on the shared pool; this one was smoke-tested working before the full batch ran — key in `OPENROUTER_API_KEY`, standard OpenAI-compatible endpoint, no special headers needed) as a fully separate provider, (5) safe no-op fallback fact if all four fail. Cache marks a failed entry so any rerun automatically retries it through the whole chain rather than needing a manual purge.
+
+All three AgentRouter roles are advisory to varying degrees:
 - Extractor output *is* the fact (nothing else can read the message/image), but every extracted fact carries a `confidence: high|medium|low` field the extractor must self-report.
 - Resolver output is a suggestion only — final say always goes through the coded conflict-resolution hierarchy (see below); if resolver disagrees with the hierarchy's answer, that disagreement is exactly what triggers the verifier.
 - Verifier output is purely advisory/logged — it flags concerns, it never rewrites a number or a final field. Deterministic code always produces the actual output row.

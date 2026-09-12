@@ -1,0 +1,1850 @@
+{
+  "image_01": {
+    "event_id": "event_253",
+    "action": "confirm",
+    "new_amount": 4365000,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Pay slip Aug-2019 shows net pay IDR 4,365,000 transferred to M NURHUDA SY; printed 2019-09-02."
+  },
+  "image_02": {
+    "event_id": "event_1442",
+    "action": "confirm",
+    "new_amount": 200000,
+    "new_date": "2023-08-11",
+    "confidence": "high",
+    "note": "Rent receipt no. 9453 dated 11/08/23; total rent Rs 2,00,000 for Apr-Sep 2022, amount received Rs 1,00,000, balance Rs 1,00,000 due."
+  },
+  "image_03": {
+    "event_id": "event_1545",
+    "action": "confirm",
+    "new_amount": 41272.0,
+    "new_date": "2026-02-27",
+    "confidence": "high",
+    "note": "Receipt shows cash paid/net amount of 41272.00 on 27/02/2026."
+  },
+  "image_04": {
+    "event_id": "event_1700",
+    "action": "confirm",
+    "new_amount": 2854.0,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Image shows delivered order with total item bill \u20b92854.00."
+  },
+  "image_05": {
+    "event_id": "event_1786",
+    "action": "confirm",
+    "new_amount": 704.05,
+    "new_date": "2026-02-06",
+    "confidence": "high",
+    "note": "Airtel Thanks for Business bill summary shows total amount due \u20b9704.05 payable by 06-Feb-2026 (charges: rentals 580.65 + usage 16.00 + taxes 107.40)."
+  },
+  "image_06": {
+    "event_id": "event_3051",
+    "action": "confirm",
+    "new_amount": 1995.0,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Invoice shows total amount 1995.00 INR"
+  },
+  "image_07": {
+    "event_id": "event_3231",
+    "action": "confirm",
+    "new_amount": 8528.1,
+    "new_date": "2025-10-29",
+    "confidence": "high",
+    "note": "Receipt marked PAID with total 8528.10 dated 29-10-2025; printed grand total shows 8528."
+  },
+  "image_08": {
+    "event_id": "event_4535",
+    "action": "confirm",
+    "new_amount": 15339.0,
+    "new_date": "2026-08-30",
+    "confidence": "high",
+    "note": "Receipt confirms payment of \u20b915,339.00 against invoice 6455, due date 2026-08-30."
+  },
+  "image_09": {
+    "event_id": "event_5170",
+    "action": "confirm",
+    "new_amount": 723.0,
+    "new_date": "2026-06-07",
+    "confidence": "high",
+    "note": "Receipt shows water bill (Invoice 6320) paid in full via Paytm/Indian Bank; total received Rs 723.00, charge date 07-06-2026, transaction ID 39350810ed9045da91798478b89ca561."
+  },
+  "image_10": {
+    "event_id": "event_6033",
+    "action": "confirm",
+    "new_amount": 79679.26,
+    "new_date": null,
+    "confidence": "high",
+    "note": "GST invoice shows total/balance due \u20b979,679.26; no date visible."
+  },
+  "image_11": {
+    "event_id": "event_6859",
+    "action": "confirm",
+    "new_amount": 3650.0,
+    "new_date": "2023-01-19",
+    "confidence": "high",
+    "note": "Provisional bill shows total/payable amount 3650.00 dated 19-Jan-2023."
+  },
+  "image_12": {
+    "event_id": "event_7307",
+    "action": "confirm",
+    "new_amount": 33.5,
+    "new_date": "2025-10-01",
+    "confidence": "high",
+    "note": "CityCab receipt shows total $33.50 for ride on 01/10/2025."
+  },
+  "image_13": {
+    "event_id": "event_7941",
+    "action": "confirm",
+    "new_amount": 2298,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Order details show total paid \u20b92,298 (2 items, delivery free)."
+  },
+  "image_14": {
+    "event_id": "event_9421",
+    "action": "confirm",
+    "new_amount": 4593.0,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Bill total is Rs 4593.00; no date visible."
+  },
+  "image_15": {
+    "event_id": "event_9806",
+    "action": "confirm",
+    "new_amount": 9968,
+    "new_date": "2026-06-07",
+    "confidence": "high",
+    "note": "Invoice shows air travel total INR 9,968.00 dated 2026-06-07"
+  },
+  "image_16": {
+    "event_id": "event_10521",
+    "action": "confirm",
+    "new_amount": 393.22,
+    "new_date": "2026-09-03",
+    "confidence": "high",
+    "note": "Invoice shows total payable 393.22 INR and charged-on date 03/09/2026 (DD/MM/YYYY), confirming the charging session fact."
+  },
+  "message_01": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 42750000,
+    "new_date": "2025-08-15",
+    "confidence": "high",
+    "note": "Salary increase effective 2025-08-15"
+  },
+  "message_02": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Regular salary for next payroll confirmed."
+  },
+  "message_03": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Salary details changed but amount and date pending approval."
+  },
+  "message_04": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 1037.52,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Employer confirms temporary monthly payroll amount of EUR 1037.52 for the affected/next pay cycle; no event_id provided."
+  },
+  "message_05": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": null,
+    "new_date": "2024-09-23",
+    "confidence": "high",
+    "note": "Payroll record updated; salary date revised to 2024-09-23, replacing earlier date."
+  },
+  "message_06": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 1422.85,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer payroll notice states next salary reduced to EUR 1422.85 due approved unpaid leave."
+  },
+  "message_07": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Payout remains pending; no amount/date change specified."
+  },
+  "message_08": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 38760000,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Base salary confirmed as IDR 38760000."
+  },
+  "message_09": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer notice that seasonal contract ended with no confirmed off-season income or renewal; no specific payment event to amend, cancel, confirm, or delay."
+  },
+  "message_10": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 2717,
+    "new_date": "2025-08-15",
+    "confidence": "high",
+    "note": "Regular salary EUR 2717 resumes on 2025-08-15; new childcare payment amount unspecific."
+  },
+  "message_11": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 1661,
+    "new_date": "2026-01-15",
+    "confidence": "high",
+    "note": "Employer payroll confirms first salary EUR 1661 credited on 2026-01-15; ref EMP-0011."
+  },
+  "message_12": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Lease renewal increases monthly rent by 12%, but no new absolute amount or date is provided."
+  },
+  "message_13": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Bank notice explains matching debit/credit as internal transfer; no amend/cancel/confirm/delay instruction or amount/date change."
+  },
+  "message_14": {
+    "event_id": "event_1785",
+    "action": "delay",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Refund initiated but not yet credited; no new amount/date provided."
+  },
+  "message_15": {
+    "event_id": "event_1960",
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Informational account update; no units sold or cash proceeds, no directive to amend, cancel, confirm, or delay the event."
+  },
+  "message_16": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Prize claim verified and still in payment processing; not yet credited, no amount or date."
+  },
+  "message_17": {
+    "event_id": "event_2165",
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Prize proceeds reached account after withholding; claim closed with no further scheduled payments."
+  },
+  "message_18": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 30780000,
+    "new_date": "2025-08-15",
+    "confidence": "high",
+    "note": "Client approved invoice payment of IDR 30,780,000 with estimated completion 2025-08-15."
+  },
+  "message_19": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Informational message about pending payout; no amount, date, amendment, cancellation, confirmation, or delay specified."
+  },
+  "message_20": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 1452,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Regular salary for next payroll set to EUR 1452; same payroll includes one-time arrears adjustment of EUR 653.40 separately."
+  },
+  "message_21": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Seasonal contract ended; no off-season income or renewal confirmed."
+  },
+  "message_22": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 54120,
+    "new_date": "2025-02-15",
+    "confidence": "high",
+    "note": "Employer payroll update confirms first salary amount and credit date."
+  },
+  "message_23": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Informational bank notice explaining a matched debit/credit as an internal transfer; no event change requested and no event_id provided."
+  },
+  "message_24": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 196000,
+    "new_date": "2024-12-15",
+    "confidence": "high",
+    "note": "Client approved invoice payment of INR 196000; settlement expected 2024-12-15."
+  },
+  "message_25": {
+    "event_id": "event_3230",
+    "action": "delay",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Merchant says refund initiated but not yet credited; no new amount or date provided."
+  },
+  "message_26": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 2988,
+    "new_date": "2026-07-15",
+    "confidence": "high",
+    "note": "Employer payroll notice states salary increased to USD 2988 effective 2026-07-15."
+  },
+  "message_27": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 21090000,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Regular salary IDR 21090000 with one-time adjustment IDR 9490500; payroll reference EMP-0027."
+  },
+  "message_28": {
+    "event_id": "event_3491",
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Prize proceeds deposited; claim closed, no further scheduled payments."
+  },
+  "message_29": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 1760,
+    "new_date": "2024-06-15",
+    "confidence": "high",
+    "note": "Employer payroll update: first salary EUR 1760, confirmed credit date 2024-06-15."
+  },
+  "message_30": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 148000,
+    "new_date": null,
+    "confidence": "high",
+    "note": "One household employment record ended; remaining confirmed monthly salary INR 148000 (Payroll ref EMP-0030)."
+  },
+  "message_31": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 32870000,
+    "new_date": "2024-09-15",
+    "confidence": "high",
+    "note": "Payment confirmed for new employer salary IDR 32870000 on 2024-09-15."
+  },
+  "message_32": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 115000,
+    "new_date": "2025-02-15",
+    "confidence": "high",
+    "note": "Employer confirms first salary of INR 115000 with credit date 2025-02-15."
+  },
+  "message_33": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 17290000,
+    "new_date": "2026-07-15",
+    "confidence": "high",
+    "note": "Salary increase to IDR 17290000 effective 2026-07-15"
+  },
+  "message_34": {
+    "event_id": null,
+    "action": "delay",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Next payment pending; withdrawal not allowed until completed."
+  },
+  "message_35": {
+    "event_id": "event_4535",
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Message confirms property maintenance payment was received; no new amount or date provided."
+  },
+  "message_36": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 31464000,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Salary updated to IDR 31464000 per payroll reference EMP-0036."
+  },
+  "message_37": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 126000,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer payroll update: one household employment record ended; remaining confirmed monthly salary is INR 126000."
+  },
+  "message_38": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 69000,
+    "new_date": "2024-06-15",
+    "confidence": "high",
+    "note": "Employer payroll message confirms first salary INR 69000 for 2024-06-15."
+  },
+  "message_39": {
+    "event_id": "event_4994",
+    "action": "delay",
+    "new_amount": null,
+    "new_date": "2025-11-11",
+    "confidence": "medium",
+    "note": "Refund initiated but not yet credited; expected within ten business days from 2025-10-28."
+  },
+  "message_40": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 42460,
+    "new_date": "2026-07-15",
+    "confidence": "high",
+    "note": "Employer updated monthly salary to ZAR 42460 effective 2026-07-15."
+  },
+  "message_41": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Informational bank update about an internal transfer; no amend, cancel, confirm, or delay instruction."
+  },
+  "message_42": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 25840000,
+    "new_date": null,
+    "confidence": "high",
+    "note": "One household work income source ended; remaining monthly salary confirmed."
+  },
+  "message_43": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Informational payout status update; no amend, cancel, confirm, or delay requested."
+  },
+  "message_44": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 530.4,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer reports next salary reduced to USD 530.40 due to approved unpaid leave."
+  },
+  "message_45": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Seasonal contract ended; no off-season income or renewal confirmed."
+  },
+  "message_46": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 2112,
+    "new_date": "2025-08-15",
+    "confidence": "high",
+    "note": "Client approved invoice payment of USD 2112; settlement expected 2025-08-15."
+  },
+  "message_47": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Refund still processing; no explicit amount or date change specified."
+  },
+  "message_48": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Payroll change notice; bonus amount and payment date not yet approved, so no actionable amendment."
+  },
+  "message_49": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 116000,
+    "new_date": "2026-04-15",
+    "confidence": "high",
+    "note": "Client approved an INR 116000 invoice payment with settlement expected on 2026-04-15."
+  },
+  "message_50": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": null,
+    "new_date": "2025-02-23",
+    "confidence": "high",
+    "note": "Employer says revised payroll date replaces earlier update."
+  },
+  "message_51": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Renewed lease increases monthly rent by 12% starting next rent payment, but no absolute amount or date provided."
+  },
+  "message_52": {
+    "event_id": "event_6532",
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Market value notice; no units sold and no cash proceeds."
+  },
+  "message_53": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 696,
+    "new_date": "2025-05-15",
+    "confidence": "high",
+    "note": "Salary confirmed for given date"
+  },
+  "message_54": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 18700,
+    "new_date": "2026-07-15",
+    "confidence": "high",
+    "note": "Employer payroll confirms first salary ZAR 18700 credited 2026-07-15; no event_id provided so none guessed."
+  },
+  "message_55": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Renewed lease increases monthly rent by 12%, but no new amount or date is specified."
+  },
+  "message_56": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 26180,
+    "new_date": "2025-08-15",
+    "confidence": "high",
+    "note": "Client approved invoice payment of ZAR 26180 with expected settlement on 2025-08-15; case ref SER-0056."
+  },
+  "message_57": {
+    "event_id": null,
+    "action": "cancel",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employment ended; no regular salary payments scheduled after final settlement, no amount or date provided."
+  },
+  "message_58": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 3072,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer payroll confirms base salary USD 3072; commission remains pending and excluded."
+  },
+  "message_59": {
+    "event_id": "event_7186",
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Refund initiated; no amount or exact date provided."
+  },
+  "message_60": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 158000,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer confirms base salary of INR 158000; commission remains pending and unearned."
+  },
+  "message_61": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Rent increase of 12% from next payment; no amount or date provided."
+  },
+  "message_62": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Payroll notification: regular salary USD 1752 and one-time arrears USD 788.40; no event_id or requested change."
+  },
+  "message_63": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 62000,
+    "new_date": "2025-05-15",
+    "confidence": "high",
+    "note": "Regular salary INR 62000 resumes 2025-05-15; new childcare deduction starts same month."
+  },
+  "message_64": {
+    "event_id": "event_7941",
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": "2026-04-03",
+    "confidence": "high",
+    "note": "Merchant message confirms payment on 3 April 2026, but no final amount is stated."
+  },
+  "message_65": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 8618400,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer confirms monthly temporary salary of IDR 8,618,400."
+  },
+  "message_66": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 251000,
+    "new_date": "2026-01-15",
+    "confidence": "high",
+    "note": "Employer confirms regular salary of INR 251000 resumes on 2026-01-15; new childcare deduction noted without amount."
+  },
+  "message_67": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Unsolicited prize asking for upfront fees; no specific financial event to amend, cancel, confirm, or delay."
+  },
+  "message_68": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 13420,
+    "new_date": "2026-07-15",
+    "confidence": "high",
+    "note": "ClientDesk reports client approved ZAR 13420 invoice payment; settlement expected 2026-07-15; other invoices pending approval."
+  },
+  "message_69": {
+    "event_id": "event_8575",
+    "action": "delay",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Previous debit failed; bill remains outstanding and another debit may be attempted."
+  },
+  "message_70": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 49280,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Confirmed base salary ZAR 49280; commission pending and excluded from payout."
+  },
+  "message_71": {
+    "event_id": null,
+    "action": "delay",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Prize claim verified but payment still processing and not credited; no amount or new date provided."
+  },
+  "message_72": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 924,
+    "new_date": "2024-12-15",
+    "confidence": "high",
+    "note": "Client approved EUR 924 payment; settlement expected 2024-12-15."
+  },
+  "message_73": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": null,
+    "new_date": "2025-05-23",
+    "confidence": "high",
+    "note": "Employer payroll update revises salary expected date to 2025-05-23, replacing earlier date; ref EMP-0073."
+  },
+  "message_74": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 1804,
+    "new_date": "2025-08-15",
+    "confidence": "high",
+    "note": "Employer payroll confirms salary EUR 1804 for 2025-08-15."
+  },
+  "message_75": {
+    "event_id": "event_9420",
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Prize proceeds have reached account after withholding; no further payment unless separate prize confirmed."
+  },
+  "message_76": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 1419,
+    "new_date": "2026-04-15",
+    "confidence": "high",
+    "note": "Client approved an invoice payment of EUR 1419; settlement expected on 2026-04-15."
+  },
+  "message_77": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 164880,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer updated payroll record with temporary monthly pay of INR 164880 for the affected pay cycle."
+  },
+  "message_78": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 35860,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer updated payroll record with confirmed base salary ZAR 35860; commission remains pending approval."
+  },
+  "message_79": {
+    "event_id": "event_9805",
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Informational notice that portfolio market value rose and will keep moving with prices; no amend, cancel, confirm, or delay of the event."
+  },
+  "message_80": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 1815,
+    "new_date": "2024-12-15",
+    "confidence": "high",
+    "note": "Employer confirms first salary EUR 1815 for 2024-12-15."
+  },
+  "message_81": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 2123,
+    "new_date": "2025-05-15",
+    "confidence": "high",
+    "note": "Employer payroll notice confirms first salary EUR 2123 scheduled for 2025-05-15 and approved for processing."
+  },
+  "message_82": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 33440,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Confirmed base salary changed to ZAR 33440; commission remains pending approval."
+  },
+  "message_83": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 16720,
+    "new_date": "2025-08-15",
+    "confidence": "high",
+    "note": "Client approved invoice payment of ZAR 16720 with expected settlement on 2025-08-15."
+  },
+  "message_84": {
+    "event_id": null,
+    "action": "cancel",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employment terminated, no further salary payments."
+  },
+  "message_85": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 627,
+    "new_date": "2024-06-15",
+    "confidence": "high",
+    "note": "Employer confirms first salary EUR 627 on 2024-06-15."
+  },
+  "message_86": {
+    "event_id": "event_10521",
+    "action": "confirm",
+    "new_amount": 1296,
+    "new_date": "2026-09-15",
+    "confidence": "high",
+    "note": "Employer confirmed USD 1296 salary credit for 2026-09-15; exchange rate at settlement."
+  },
+  "message_87": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 148200,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer payroll update reduces next salary to INR 148200 due to approved unpaid leave."
+  },
+  "message_88": {
+    "event_id": "event_10699",
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Prize proceeds reached the account after withholding; claim closed with no further scheduled payments."
+  },
+  "message_89": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 1188,
+    "new_date": "2026-07-15",
+    "confidence": "high",
+    "note": "Employer payroll update: monthly salary increased to EUR 1188 effective 2026-07-15"
+  },
+  "message_90": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Informational payroll note; no specific event to amend/confirm/cancel/delay. Mentions regular salary EUR 759 and one-time arrears adjustment EUR 341.55, payroll ref EMP-0090."
+  },
+  "message_91": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 176000,
+    "new_date": "2025-05-15",
+    "confidence": "high",
+    "note": "Employer advises regular salary INR 176000 resumes 2025-05-15; new childcare deduction begins same month; updated pay/deductions next cycle."
+  },
+  "message_92": {
+    "event_id": "event_11129",
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Sale proceeds deposited, no pending sales."
+  },
+  "message_93": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 15390000,
+    "new_date": "2025-08-15",
+    "confidence": "high",
+    "note": "Client approved invoice payment IDR 15,390,000 with estimated completion 2025-08-15."
+  },
+  "message_94": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Payment pending, no change to amount or date indicated."
+  },
+  "message_95": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 748,
+    "new_date": "2025-11-15",
+    "confidence": "high",
+    "note": "Employer confirms salary EUR 748 for 2025-11-15; payroll ref EMP-0095."
+  },
+  "message_96": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 152000,
+    "new_date": "2026-07-15",
+    "confidence": "high",
+    "note": "Client approved invoice payment of INR 152000; settlement expected on 2026-07-15."
+  },
+  "message_97": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 50160,
+    "new_date": "2024-09-15",
+    "confidence": "high",
+    "note": "Regular salary ZAR 50160 resumes on 2024-09-15; new recurring childcare payment begins same month (payroll ref EMP-0097)."
+  },
+  "message_98": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Payroll details changed but final bonus amount and payment date are not yet approved; no actionable amendment or delay specified."
+  },
+  "message_99": {
+    "event_id": "event_11925",
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Notice confirms prize proceeds received after withholding; claim closed with no further scheduled payments."
+  },
+  "message_100": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 2177.28,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer payroll update sets temporary monthly pay to USD 2177.28."
+  },
+  "message_101": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": null,
+    "new_date": "2025-05-23",
+    "confidence": "high",
+    "note": "Employer payroll update replaces earlier payroll date with confirmed 2025-05-23."
+  },
+  "message_102": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 1193.4,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer payroll states next salary is reduced to USD 1193.40 due to unpaid leave."
+  },
+  "message_103": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Seasonal contract ended; payroll details changed, no further income confirmed."
+  },
+  "message_104": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 828,
+    "new_date": "2026-07-15",
+    "confidence": "high",
+    "note": "Employer notice states monthly salary increased to USD 828 effective 2026-07-15."
+  },
+  "message_105": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Lease renewal raises rent by 12% from next rent payment, but no numeric amount or date is provided."
+  },
+  "message_106": {
+    "event_id": "event_12709",
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Dispute remains open; no reversal posted, no amount or date change."
+  },
+  "message_107": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 31900,
+    "new_date": "2025-02-15",
+    "confidence": "high",
+    "note": "Employer payroll confirms first salary amount and credit date; no event_id provided."
+  },
+  "message_108": {
+    "event_id": "event_13032",
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Sale proceeds settled and sale order complete, confirming event; no amount or date provided."
+  },
+  "message_109": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 2040,
+    "new_date": "2024-12-15",
+    "confidence": "high",
+    "note": "Client approved an invoice payment of USD 2040 with settlement expected on 2024-12-15."
+  },
+  "message_110": {
+    "event_id": "event_13207",
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Funds reached account after withholding; claim closed with no further scheduled payments."
+  },
+  "message_111": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 864,
+    "new_date": "2026-07-15",
+    "confidence": "high",
+    "note": "Payroll confirms first salary USD 864 with credit date 2026-07-15."
+  },
+  "message_112": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer payroll notice states regular salary INR 258000 and one-time arrears adjustment INR 116100; no event-specific amendment, cancellation, confirmation, or delay."
+  },
+  "message_113": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 1529,
+    "new_date": "2026-04-15",
+    "confidence": "high",
+    "note": "Employer payroll states regular salary EUR 1529 resumes on 2026-04-15; recurring childcare payment begins same month but amount not specified."
+  },
+  "message_114": {
+    "event_id": "event_13663",
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Sale proceeds have settled and the sale order is complete."
+  },
+  "message_115": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 893.75,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer updated payroll record; next salary reduced to EUR 893.75 due to approved unpaid leave."
+  },
+  "message_116": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 46170000,
+    "new_date": "2024-09-15",
+    "confidence": "high",
+    "note": "First salary confirmed for 2024-09-15"
+  },
+  "message_117": {
+    "event_id": "event_14026",
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Message confirms the employer credit is an expense reimbursement and the claim is closed; no new amount or date provided."
+  },
+  "message_118": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Informational update: foreign-currency charge; final home-currency amount pending bank settlement, no amount or date change."
+  },
+  "message_119": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 1628,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Payroll reports one household employment record ended and remaining confirmed monthly salary is EUR 1628."
+  },
+  "message_120": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 84000,
+    "new_date": "2025-05-15",
+    "confidence": "high",
+    "note": "Payroll update: regular salary of INR 84000 resumes on 2025-05-15; childcare deduction begins but amount not specified."
+  },
+  "message_121": {
+    "event_id": "event_14399",
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Bank reports dispute still open and no reversal posted; no amount or date change."
+  },
+  "message_122": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 23940000,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Monthly temporary salary confirmed as IDR 23940000 per payroll update."
+  },
+  "message_123": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "ShiftPay payout remains pending; no amount or date provided."
+  },
+  "message_124": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 1672,
+    "new_date": "2024-06-15",
+    "confidence": "high",
+    "note": "Employer confirms first salary of EUR 1672 for 2024-06-15, ref EMP-0124."
+  },
+  "message_125": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 26790000,
+    "new_date": "2025-11-15",
+    "confidence": "high",
+    "note": "Salary amount and date confirmed from employer message."
+  },
+  "message_126": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 29070000,
+    "new_date": "2026-07-15",
+    "confidence": "high",
+    "note": "Salary increase announced effective 2026-07-15"
+  },
+  "message_127": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 30400000,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Updated regular salary to IDR 30,400,000 with one-time adjustment of IDR 13,680,000."
+  },
+  "message_128": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 44270000,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Base salary confirmed as IDR 44,270,000; commission pending."
+  },
+  "message_129": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employment ended; no regular salary payments after final settlement."
+  },
+  "message_130": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 2340,
+    "new_date": "2024-12-15",
+    "confidence": "high",
+    "note": "Client approved invoice payment of USD 2340; settlement expected 2024-12-15."
+  },
+  "message_131": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": null,
+    "new_date": "2025-05-23",
+    "confidence": "high",
+    "note": "Employer payroll update revises expected salary date to 2025-05-23, replacing earlier payroll date."
+  },
+  "message_132": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 137150,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer notice reduces upcoming salary to INR 137150 due to approved unpaid leave."
+  },
+  "message_133": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Merchant update says foreign-currency refund is still processing and final home-currency credit will be determined at settlement; no amount or date change provided."
+  },
+  "message_134": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Message indicates payment pending, no amend/cancel/confirm/delay requested."
+  },
+  "message_135": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Bank informational notice: matching debit/credit were an internal transfer between the same holder's accounts; no amount, date, or transaction action requested."
+  },
+  "message_136": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Informational bank notice about minimum payments due on two separate card accounts; no amount or date provided."
+  },
+  "message_137": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 1284,
+    "new_date": "2025-11-15",
+    "confidence": "high",
+    "note": "Employer payroll confirms salary USD 1284 for 2025-11-15."
+  },
+  "message_138": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 1924.56,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer notice sets temporary/reduced monthly pay at EUR 1924.56 for the next affected payroll; no event_id or pay date provided."
+  },
+  "message_139": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 847,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Confirmed base salary EUR 847; commission pending approval and excluded from payout."
+  },
+  "message_140": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 1731.6,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer payroll update reduces next salary to USD 1731.60 due to approved unpaid leave."
+  },
+  "message_141": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 2376,
+    "new_date": "2024-12-15",
+    "confidence": "high",
+    "note": "Client approved invoice payment of EUR 2376; settlement expected 2024-12-15."
+  },
+  "message_142": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "low",
+    "note": "Message indicates a fee payment request but no specific amend/cancel/confirm/delay action or amounts/dates specified."
+  },
+  "message_143": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 59000,
+    "new_date": "2026-07-15",
+    "confidence": "high",
+    "note": "Employer payroll confirms first salary INR 59000 credit date 2026-07-15, ref EMP-0143."
+  },
+  "message_144": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer notice states bonus amount and payment date are not yet approved; no amend/cancel/confirm/delay action specified and no event_id provided."
+  },
+  "message_145": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "low",
+    "note": "No amount or date specified; only informational note about foreign currency charge."
+  },
+  "message_146": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Informational refund update; no amount or date provided."
+  },
+  "message_147": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Notice of 12% rent increase from next payment; no exact amount or date provided."
+  },
+  "message_148": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 31889,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer payroll notice reduces next salary to ZAR 31889 due to unpaid leave."
+  },
+  "message_149": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 145000,
+    "new_date": "2024-09-15",
+    "confidence": "high",
+    "note": "Employer confirms first salary INR 145000 for 2024-09-15."
+  },
+  "message_150": {
+    "event_id": "event_17401",
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer confirms payment is expense reimbursement and claim is closed."
+  },
+  "message_151": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 627,
+    "new_date": "2026-07-15",
+    "confidence": "high",
+    "note": "Employer confirms monthly salary increased to EUR 627 effective 2026-07-15."
+  },
+  "message_152": {
+    "event_id": "event_17662",
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Refund initiation confirmed; credit pending within ten business days."
+  },
+  "message_153": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 1750.32,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Employer payroll message sets temporary monthly pay to EUR 1750.32 and says reduced amount continues next payroll; no event_id or date provided."
+  },
+  "message_154": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": null,
+    "new_date": "2025-08-23",
+    "confidence": "high",
+    "note": "Employer revised payroll date, replacing earlier update; ref EMP-0154."
+  },
+  "message_155": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 1222.65,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer payroll states next salary reduced to EUR 1222.65 due to approved unpaid leave; no specific pay date provided."
+  },
+  "message_156": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 38190000,
+    "new_date": "2025-11-15",
+    "confidence": "high",
+    "note": "Salary update confirmed"
+  },
+  "message_157": {
+    "event_id": "event_18269",
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Bank status update: dispute open and no reversal posted; no amount or date change."
+  },
+  "message_158": {
+    "event_id": null,
+    "action": "delay",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Next payment from ShiftPay is pending; earnings may change until payment completed."
+  },
+  "message_159": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "low",
+    "note": "Bonus pending; amount and date not yet agreed."
+  },
+  "message_160": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Seasonal contract ended; no further income or extension confirmed."
+  },
+  "message_161": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Informational bank notice about separate card account minimums; no amount, date, or actionable change provided. Txn ref BAN-0161."
+  },
+  "message_162": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 2024,
+    "new_date": "2026-01-15",
+    "confidence": "high",
+    "note": "Employer confirms first salary EUR 2024 with credit date 2026-01-15."
+  },
+  "message_163": {
+    "event_id": "event_19182",
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Message provides account update, indicates value decreased, no transaction, no amendment."
+  },
+  "message_164": {
+    "event_id": "event_19334",
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Bank says dispute remains open; no reversal posted."
+  },
+  "message_165": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": null,
+    "new_date": "2025-02-23",
+    "confidence": "high",
+    "note": "Salary payment date updated to 2025-02-23 per new info."
+  },
+  "message_166": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer reports seasonal contract ended and no off-season income or renewal confirmed; no financial event to amend, cancel, confirm, or delay."
+  },
+  "message_167": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Refund still processing; no new amount or date provided."
+  },
+  "message_168": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Pending payout notice; no amount or date change and no event reference."
+  },
+  "message_169": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 2424,
+    "new_date": "2026-07-15",
+    "confidence": "high",
+    "note": "Employer payroll notice states monthly salary increased to USD 2424 effective 2026-07-15."
+  },
+  "message_170": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 1914,
+    "new_date": "2026-04-15",
+    "confidence": "high",
+    "note": "Regular salary of EUR 1914 resumes on 2026-04-15; recurring childcare payment begins same month."
+  },
+  "message_171": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 1346.4,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer reports temporary monthly pay reduced to EUR 1346.40 for next payroll; no event id provided."
+  },
+  "message_172": {
+    "event_id": "event_20379",
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Refund initiated but not completed; no amount or date change provided."
+  },
+  "message_173": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 35200,
+    "new_date": "2026-01-15",
+    "confidence": "high",
+    "note": "Client approved an invoice payment of ZAR 35200, settlement expected 2026-01-15."
+  },
+  "message_174": {
+    "event_id": "event_20615",
+    "action": "confirm",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Claim closed, no additional compensation scheduled; reimbursement for prior work."
+  },
+  "message_175": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Rent increase of 12% effective next payment; exact amount and date not specified."
+  },
+  "message_176": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 260000,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer updated regular salary to INR 260000; one-time arrears adjustment INR 117000."
+  },
+  "message_177": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Payroll states quarterly bonus amount and payment date are not yet approved; no confirmed change to any event."
+  },
+  "message_178": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 30400000,
+    "new_date": "2026-04-15",
+    "confidence": "high",
+    "note": "New salary info from employer confirming amount and credit date."
+  },
+  "message_179": {
+    "event_id": "event_21101",
+    "action": "delay",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Previous debit failed; bill remains outstanding with another debit attempt planned, no new amount/date."
+  },
+  "message_180": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 2827,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Payroll updated: one employment record ended; remaining confirmed monthly salary is EUR 2827."
+  },
+  "message_181": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 2772,
+    "new_date": "2024-06-15",
+    "confidence": "high",
+    "note": "Employer confirms first salary amount EUR 2772 and credit date 2024-06-15."
+  },
+  "message_182": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Message provides salary amount and date, no amendment."
+  },
+  "message_183": {
+    "event_id": "event_21582",
+    "action": "delay",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Bank says dispute is still open and no reversal has been posted yet."
+  },
+  "message_184": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Informational update; refund still processing and final home-currency credit unknown until settlement."
+  },
+  "message_185": {
+    "event_id": "event_21785",
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Notification of displayed investment value decrease; no specific amount or date provided."
+  },
+  "message_186": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Seasonal contract ended; no off-season income or extension confirmed."
+  },
+  "message_187": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 912,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer reports payroll change; one employment record ended and remaining confirmed monthly salary is USD 912."
+  },
+  "message_188": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 62000,
+    "new_date": "2026-01-15",
+    "confidence": "high",
+    "note": "Employer payroll update confirms first salary amount and credit date."
+  },
+  "message_189": {
+    "event_id": null,
+    "action": "cancel",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Seasonal contract ended, no off-season income or extension confirmed."
+  },
+  "message_190": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 968,
+    "new_date": "2025-08-15",
+    "confidence": "high",
+    "note": "Employer payroll confirms first salary EUR 968 scheduled for 2025-08-15 and approved for processing."
+  },
+  "message_191": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 1680,
+    "new_date": "2025-11-15",
+    "confidence": "high",
+    "note": "Employer payroll confirms salary USD 1680 for 2025-11-15."
+  },
+  "message_192": {
+    "event_id": null,
+    "action": "cancel",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employment ended; no regular salary payments scheduled after final settlement, details to follow separately."
+  },
+  "message_193": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 1528.56,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer payroll update states temporary monthly pay is EUR 1528.56, reduced amount continues for next payroll."
+  },
+  "message_194": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 1548,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer confirmed base salary USD 1548; open-deal commission remains pending."
+  },
+  "message_195": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 702,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer states next salary is reduced to USD 702 due to approved unpaid leave."
+  },
+  "message_196": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 53680,
+    "new_date": "2024-12-15",
+    "confidence": "high",
+    "note": "Employer message confirms first salary of ZAR 53680 for 2024-12-15."
+  },
+  "message_197": {
+    "event_id": "event_23203",
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Refund not yet recorded; dispute still open."
+  },
+  "message_198": {
+    "event_id": "event_23306",
+    "action": "delay",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "medium",
+    "note": "Previous debit failed and bill remains outstanding; another debit will be attempted, indicating a delayed/retried payment."
+  },
+  "message_199": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Payroll update states bonus amount and payment date are not yet approved; no actionable change to extract."
+  },
+  "message_200": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 214000,
+    "new_date": "2024-06-15",
+    "confidence": "high",
+    "note": "Employer confirms first salary amount and credit date."
+  },
+  "message_201": {
+    "event_id": "event_23855",
+    "action": "delay",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Previous debit failed; bill remains outstanding and another debit will be attempted."
+  },
+  "message_202": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Bank notice explaining matching debit/credit as an internal transfer between the same holder's accounts; no instruction to amend, cancel, confirm, or delay any payment event."
+  },
+  "message_203": {
+    "event_id": null,
+    "action": "amend",
+    "new_amount": 48260000,
+    "new_date": null,
+    "confidence": "high",
+    "note": "One household work income source ended; remaining confirmed monthly salary is IDR 48,260,000."
+  },
+  "message_204": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 1485,
+    "new_date": "2025-05-15",
+    "confidence": "high",
+    "note": "Employer confirms salary EUR 1485 for 2025-05-15; no event_id provided."
+  },
+  "message_205": {
+    "event_id": "event_24352",
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Informational market-value update; no sale, cash transaction, amount, or date change."
+  },
+  "message_206": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Seasonal contract ended; no off-season income or renewal confirmed, and no amount/date change specified."
+  },
+  "message_207": {
+    "event_id": "event_24534",
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Informational market value update; no units sold, no cash proceeds, no amount or date change."
+  },
+  "message_208": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Informational notice about foreign-currency charge; no amend/cancel/confirm/delay or amount/date provided."
+  },
+  "message_209": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Status update only; claim verified, payment still processing, not yet credited."
+  },
+  "message_210": {
+    "event_id": null,
+    "action": "confirm",
+    "new_amount": 38280,
+    "new_date": "2025-11-15",
+    "confidence": "high",
+    "note": "Employer confirms first salary of ZAR 38280 scheduled for 2025-11-15 and approved for processing."
+  },
+  "message_211": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Employer payroll notice: regular salary INR 103000 and one-time arrears INR 46350; no event_id."
+  },
+  "message_212": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Bonus pending; amount and date not yet approved."
+  },
+  "message_213": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Bank notice of equal debit/credit transfer between own accounts; no change required."
+  },
+  "message_214": {
+    "event_id": null,
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Merchant notice: foreign-currency refund still processing; final home-currency credit pending settlement. No event change specified."
+  },
+  "message_215": {
+    "event_id": "event_25342",
+    "action": "none",
+    "new_amount": null,
+    "new_date": null,
+    "confidence": "high",
+    "note": "Refund processed but not yet received; awaiting credit."
+  }
+}
