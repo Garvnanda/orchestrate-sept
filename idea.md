@@ -14,6 +14,8 @@ Living record of the brainstorm that led to the locked design. Raw turn-by-turn 
 
 ## Secondary decisions
 
+Note: the model roster, resolver/verifier roles and LLM explanation rewrite below were superseded by the post-audit decisions further down. They are kept as the decision history.
+
 - **Data layer: stdlib only** (`csv` + dict/list, `sqlite3` fallback if joins get messy). Rejected pandas (extra dependency, not needed at 25k-row scale) and duckdb (same, plus not stdlib). Fewer things that can break in someone else's grading environment.
 - **Explanation generation: template → LLM rewrite, must include every fact, no new ones.** Deterministic pass builds a fixed fact list (amount safe, balance after payment, minimum kept, plan dates/amounts, spending changes, triggering rule). LLM rewrite pass must surface every item, forbidden from adding anything outside the list. Chosen over pure template (reads robotic/vague, scores worse on "usefulness") and free LLM rewrite (risks inventing/dropping a number — ungrounded, exactly what an interview would probe).
 - **Validation: mandatory complete-row invariant + standalone validator pass**, non-negotiable regardless of engine choice — directly answers the prior submission's all-rows-blank failure. Validator blocks the final write on any incomplete or contract-violating row; any internal failure falls back to a safe deterministic default (`not_recommended`/`wait` + reason), never a blank cell.

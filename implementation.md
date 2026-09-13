@@ -45,6 +45,8 @@ The audit found only 3/25 samples fully matching, 2 invalid rows hidden by a wea
 
 ## Blocking items — RESOLVED
 
-- Model IDs confirmed: extractor=`deepseek-v4-flash`, resolver=`gpt-5.6-sol`, verifier=`claude-opus-5`. Only these 3 models available for now.
+Note: steps 2, 5-13, 15 and 18 above describe the pre-rework design (`evidence.py`, `conflicts.py`, `reconstruct.py`, LLM explanation rewrite, 490-call usage numbers), all deleted or superseded by R1-R14. The model list below is historical; the current roster is in technical.md (`deepseek-v4-flash` on AgentRouter, OpenRouter free models for content-blocked messages).
+
+- Model IDs confirmed (historical): extractor=`deepseek-v4-flash`, resolver=`gpt-5.6-sol`, verifier=`claude-opus-5`.
 - `.env` variable name confirmed: `AGENTROUTER_API_KEY`.
 - Step 4 (AgentRouter client wrapper) is now unblocked.
