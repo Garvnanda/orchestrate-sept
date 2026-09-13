@@ -1,8 +1,6 @@
 import datetime
 
-import data_loader
-import evidence
-import reconstruct
+import balance
 
 HORIZON_DAYS = 90
 
@@ -12,14 +10,21 @@ def _fmt_amount(a):
     return str(int(r)) if r == int(r) else f"{r:.2f}"
 
 
+def horizon_end_for(request_date):
+    return (balance.parse_date(request_date) + datetime.timedelta(days=HORIZON_DAYS)).isoformat()
+
+
 def compute_capacity(profile, request, current_balance, timeline):
     """amount_safe_to_pay and earliest_date_for_full_payment — both computed before any
     optional spending changes, independent of the user's payment-method preferences."""
     request_date = request["request_date"]
-    horizon_end = (reconstruct._parse_date(request_date) + datetime.timedelta(days=HORIZON_DAYS)).isoformat()
-    global_min = reconstruct.suffix_min_balance(current_balance, timeline, request_date)
-    amount_safe_to_pay = max(0.0, min(global_min - profile["minimum_balance_to_keep"], request["requested_amount"]))
-    earliest_date = reconstruct.find_earliest_safe_date(
+    horizon_end = horizon_end_for(request_date)
+    if balance.baseline_min_balance(current_balance, timeline) < profile["minimum_balance_to_keep"]:
+        amount_safe_to_pay = 0.0
+    else:
+        room = balance.suffix_min_balance(current_balance, timeline, request_date) - profile["minimum_balance_to_keep"]
+        amount_safe_to_pay = max(0.0, min(round(room, 2), request["requested_amount"]))
+    earliest_date = balance.find_earliest_safe_date(
         current_balance, timeline, profile["minimum_balance_to_keep"],
         request["requested_amount"], request_date, horizon_end,
     )
@@ -28,7 +33,7 @@ def compute_capacity(profile, request, current_balance, timeline):
 
 def _build_installment_plan(opt):
     plan = []
-    d = reconstruct._parse_date(opt["first_payment_date"])
+    d = balance.parse_date(opt["first_payment_date"])
     freq = datetime.timedelta(days=opt["payment_frequency_days"] or 0)
     for _ in range(opt["number_of_payments"]):
         plan.append((d.isoformat(), opt["payment_amount"]))
@@ -70,7 +75,7 @@ def build_candidates(profile, request, payment_options, current_balance, forecas
                 continue
             plan = _build_installment_plan(opt)
             extra_payments = [(d, a) for d, a in plan if d <= horizon_end]
-            if reconstruct.schedule_min_balance(current_balance, forecast_events, extra_payments) < min_bal:
+            if balance.schedule_min_balance(current_balance, forecast_events, extra_payments) < min_bal:
                 continue
             last_date = plan[-1][0]
             candidates.append({
@@ -86,7 +91,9 @@ def build_candidates(profile, request, payment_options, current_balance, forecas
             "start_date": earliest_date, "num_payments": 1, "option_id": None,
         })
 
-    return candidates
+    # problem_statement.md: a recommendation is safe only if it completes the full request by
+    # desired_completion_date — a late plan is not a safe eligible plan, so it cannot be recommended.
+    return [c for c in candidates if c["completes_by_deadline"]]
 
 
 def rank_candidates(candidates):
@@ -134,41 +141,3 @@ def decide(profile, request, payment_options, current_balance, forecast_events, 
         "payment_plan": plan_str,
         "earliest_date_for_full_payment": earliest_date or "",
     }
-
-
-def _self_check():
-    ds = data_loader.load_all()
-    amount_overrides = evidence.resolve_blank_amounts(ds)
-    image_facts = evidence.extract_all_images(ds)
-    message_facts = evidence.extract_all_messages(ds)
-    resolved_events, events_by_user = reconstruct.build_all(ds, message_facts, image_facts, amount_overrides)
-
-    def run_for(request_id, expected_user):
-        req = next(r for r in ds.sample_requests if r["request_id"] == request_id)
-        req = dict(req)
-        req["requested_amount"] = float(req["requested_amount"])
-        req["allows_partial_payment"] = req["allows_partial_payment"].strip().lower() == "true"
-        profile = ds.profiles[expected_user]
-        user_events = events_by_user.get(expected_user, [])
-        series = reconstruct.detect_recurring_series(user_events, req["request_date"])
-        forecast = reconstruct.project_forecast_events(req["request_date"], user_events, series)
-        timeline = reconstruct.simulate_balance(profile["current_available_balance"], forecast)
-        options = ds.payment_options_by_request.get(request_id, [])
-        result = decide(profile, req, options, profile["current_available_balance"], forecast, timeline)
-        return req, result
-
-    req1, r1 = run_for("request_01", "user_01")
-    assert r1["affordability_status"] == "affordable_now", r1
-    assert r1["recommended_payment_method"] == "full_payment", r1
-    assert abs(r1["amount_safe_to_pay"] - 25256) < 0.01, r1
-    assert r1["earliest_date_for_full_payment"] == req1["request_date"], r1
-    print(f"OK request_01: {r1}")
-
-    req2, r2 = run_for("request_02", "user_02")
-    print(
-        f"request_02 (informational only, not asserted — see technical.md 'sample divergence' note): {r2}"
-    )
-
-
-if __name__ == "__main__":
-    _self_check()

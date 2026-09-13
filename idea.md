@@ -24,6 +24,18 @@ Living record of the brainstorm that led to the locked design. Raw turn-by-turn 
   - Resolver fires when two evidence sources (event row vs message/image, or two messages) give different amount/date/status for the same `event_id`/`request_id`.
   - Verifier fires when extractor confidence = `low` on a fact actually used in the decision, OR the resolver's suggested winner contradicts the coded conflict-resolution hierarchy (rules alone couldn't cleanly settle it).
 
+## Post-audit decisions (2026-09-13, each approved by the user)
+
+- **Full rework over patching.** The judge-style audit scored 3/25 exact samples and found invalid rows the old validator missed. Patching the old extractor/conflict-resolver design could not fix forecast semantics, so the forecast, decision, spending-change and validation layers were rebuilt.
+- **Scenario vocabulary instead of free-form event amendments.** Messages describe situations (salary change, pay-date move, income ended), not edits to one row. A fixed scenario list maps them onto forecast rules code can apply.
+- **Second read driven by uncertainty, not a fixed sequence.** Only non-high-confidence facts get a second model. Disagreement → financially safer interpretation. The old always-on resolver was removed.
+- **Deterministic explanation templates** replaced the LLM rewrite. Rewrite risked invented numbers and cost 250 calls; templates match the sample wording exactly on 14/25.
+- **Translation retry tier dropped.** It never unblocked a content-blocked message; OpenRouter did.
+- **Cost reported with proxy list prices, clearly labeled**, because AgentRouter exposes no per-token price.
+- **`glm-5.3` removed; `deepseek-v4-flash` is the only AgentRouter model** (user instruction after the clean run showed `glm-5.3` content-blocked on 8 of 10 second reads). Second reads are now a repeat `deepseek-v4-flash` call; OpenRouter stays limited to messages AgentRouter blocks.
+- **Second read for content-blocked messages via a different OpenRouter free model** (user chose option 3 of: leave documented / drop unconfirmed income facts / second OpenRouter model). This relaxes the earlier "OpenRouter only for the 45 blocked first reads" rule to also cover their second reads. `nex-agi/nex-n2.5-pro:free` first, `dots-studio/dots-3-note-preview:free` backup; `google/gemma-4-*:free` rejected because it returned 429 upstream when tested.
+- **Transcript: both prepared** — `log.txt` (AGENTS.md format) and a verbatim `chat_transcript.md` export; the user picks what to submit.
+
 ## Why this over the prior submission's approach
 
 Prior submission (different problem statement) scored 0 on output.csv (all rows had blank routing decisions) and had its chat transcript rejected (summary, not a real transcript). Both failure modes are structurally prevented here: log.txt is genuinely turn-by-turn (enforced by AGENTS.md + this session), and the complete-row invariant + standalone validator make an all-blank output impossible to ship undetected. Full context in memory (`prior_submission_feedback` — see project memory, not duplicated here since it isn't code-derivable and belongs outside this repo).

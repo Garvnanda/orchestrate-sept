@@ -53,9 +53,10 @@ cp .env.example .env   # fill in AGENTROUTER_API_KEY, AGENTROUTER_BASE_URL, AGEN
 python code/main.py    # run from the repository root — writes output.csv here
 ```
 
-- All money math, forecasting, ranking, and the 90-day safety check are 100% deterministic Python — no LLM ever touches a number. LLM calls are narrowly scoped to: reading messages/images into structured facts, a second-opinion check on detected factual conflicts, and rewriting a pre-computed fact list into fluent prose for `decision_explanation` (never allowed to add or drop a fact).
-- Every stage caches its LLM calls to `code/evaluation/*.json` — a rerun with warm caches makes zero new API calls and reproduces the same `output.csv`.
-- Module map: `code/data_loader.py` (parse CSVs) → `code/currency.py` (FX) → `code/llm_client.py` (AgentRouter + OpenRouter clients) → `code/evidence.py` (extraction) → `code/conflicts.py` (conflict resolution + verifier) → `code/reconstruct.py` (financial state + 90-day forecast) → `code/decision.py` (affordability decision) → `code/spending_changes.py` (optional-changes upgrade pass) → `code/explanation.py` (grounded prose) → `code/validate.py` (contract enforcement) → `code/main.py` (orchestrates all of the above, writes `output.csv`).
+- All money math, forecasting, plan ranking, validation and the `decision_explanation` text are deterministic Python — no model ever produces a number or an output field. Models only read messages and blank-amount images into a fixed JSON schema, which is normalized at the boundary; facts not marked high confidence get a second read from a different model, and on disagreement the financially safer reading is kept.
+- Model results are cached in `code/evaluation/*.json`, keyed by a hash of the message text / image bytes. A rerun on unchanged data makes zero API calls and reproduces the same `output.csv` (no keys needed).
+- Module map: `data_loader.py` (CSVs) → `currency.py` (dated FX) → `llm_client.py` (AgentRouter + OpenRouter clients, usage tracking) → `scenarios.py` (message/image reading, second read) → `forecast.py` (income, recurring expenses, pending items, message scenarios → 90-day event list) → `balance.py` (running balance, earliest safe date) → `decision.py` (capacity, candidate plans, ranking) → `spending_changes.py` (flexible-expense changes, only when nothing else is safe) → `explanation.py` (templates) → `validate.py` (output contract) → `main.py` (orchestration, writes `output.csv`).
+- `python code/evaluate_samples.py -v` scores the pipeline against `dataset/sample_requests.csv` (samples are never used in prompts).
 - See `code/evaluation/usage_report.md` for the token/cost breakdown of the run that produced the submitted `output.csv`.
 
 ## Important File Locations

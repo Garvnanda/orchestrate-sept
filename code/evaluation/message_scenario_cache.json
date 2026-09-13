@@ -1,0 +1,4059 @@
+{
+  "message_01": {
+    "hash": "842f9155a4c587f7",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 42750000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-08-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_02": {
+    "hash": "e7e93990446ab73d",
+    "facts": [
+      {
+        "scenario": "salary_with_one_time_arrears",
+        "amount": null,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "medium"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_03": {
+    "hash": "62b2bc24daa8b2d0",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_04": {
+    "hash": "0f8dbe113b7bd416",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 1037.52,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_05": {
+    "hash": "79691bef3bfeec1b",
+    "facts": [
+      {
+        "scenario": "salary_date_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-09-23",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_06": {
+    "hash": "85805c09635039cf",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 1422.85,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_07": {
+    "hash": "cdb8887589565334",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_08": {
+    "hash": "8884c7ee403a757e",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 38760000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "medium"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_09": {
+    "hash": "78af2ae7eef9d9de",
+    "facts": [
+      {
+        "scenario": "income_ended",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_10": {
+    "hash": "d406d9cd7df129b6",
+    "facts": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 2717.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-08-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_11": {
+    "hash": "fe8e79cef3538844",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 1661.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-01-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_12": {
+    "hash": "243067115df238c5",
+    "facts": [
+      {
+        "scenario": "expense_percent_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": 12.0,
+        "effective_date": null,
+        "cycles": null,
+        "category": "rent",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_13": {
+    "hash": "08958837d8f03530",
+    "facts": [
+      {
+        "scenario": "internal_transfer",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_14": {
+    "hash": "1066b28eb80772b6",
+    "facts": [
+      {
+        "scenario": "refund_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_15": {
+    "hash": "06f23bb16ce0fce9",
+    "facts": [
+      {
+        "scenario": "unrealized_value_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_16": {
+    "hash": "857d3c7ccacc4feb",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "prize",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_17": {
+    "hash": "a75e260b2994d22c",
+    "facts": [
+      {
+        "scenario": "one_time_income_closed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_18": {
+    "hash": "4b276be553c6784d",
+    "facts": [
+      {
+        "scenario": "invoice_payment_confirmed",
+        "amount": 30780000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-08-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_19": {
+    "hash": "bbc610be3b8e444b",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_20": {
+    "hash": "2edef99bfd54b591",
+    "facts": [
+      {
+        "scenario": "salary_with_one_time_arrears",
+        "amount": 1452.0,
+        "currency": "EUR",
+        "secondary_amount": 653.4,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_21": {
+    "hash": "5ec7ae619c179729",
+    "facts": [
+      {
+        "scenario": "income_ended",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-10-27",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_22": {
+    "hash": "3f67da4223213450",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 54120.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-02-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_23": {
+    "hash": "18363691faccd0c7",
+    "facts": [
+      {
+        "scenario": "internal_transfer",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_24": {
+    "hash": "246c38ce6f17879a",
+    "facts": [
+      {
+        "scenario": "invoice_payment_confirmed",
+        "amount": 196000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-12-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_25": {
+    "hash": "1641f0ab59bb4ef8",
+    "facts": [
+      {
+        "scenario": "refund_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_26": {
+    "hash": "8013da00af4716a9",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 2988.0,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-07-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_27": {
+    "hash": "08bba79121bd93fa",
+    "facts": [
+      {
+        "scenario": "salary_with_one_time_arrears",
+        "amount": 21090000.0,
+        "currency": "IDR",
+        "secondary_amount": 9490500.0,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_28": {
+    "hash": "d8b6a8b28382be38",
+    "facts": [
+      {
+        "scenario": "one_time_income_closed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_29": {
+    "hash": "a407dd3faf65670e",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 1760.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-06-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_30": {
+    "hash": "35c7923df929bd7e",
+    "facts": [
+      {
+        "scenario": "remaining_household_income",
+        "amount": 148000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_31": {
+    "hash": "5b1bcce16d84d70f",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 32870000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-09-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_32": {
+    "hash": "9bf76963d444200f",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 115000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-02-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_33": {
+    "hash": "543b0e69741d9f4c",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 17290000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-07-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_34": {
+    "hash": "128270c7d9b87d95",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_35": {
+    "hash": "a8e346af7e9278e2",
+    "facts": [
+      {
+        "scenario": "payment_receipt",
+        "amount": null,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-07-24",
+        "cycles": null,
+        "category": "maintenance",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_36": {
+    "hash": "bc27735559962210",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 31464000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_37": {
+    "hash": "c10e4ece1ac5bedb",
+    "facts": [
+      {
+        "scenario": "remaining_household_income",
+        "amount": 126000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_38": {
+    "hash": "dbb8d9c3b9fba9b3",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 69000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-06-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_39": {
+    "hash": "c3f16616282f88eb",
+    "facts": [
+      {
+        "scenario": "refund_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_40": {
+    "hash": "48f6ab1cc9c77cff",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 42460.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-07-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_41": {
+    "hash": "bd8d574bfdbbca70",
+    "facts": [
+      {
+        "scenario": "internal_transfer",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_42": {
+    "hash": "12821869593802e6",
+    "facts": [
+      {
+        "scenario": "remaining_household_income",
+        "amount": 25840000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_43": {
+    "hash": "5817b4fc827f51b2",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_44": {
+    "hash": "1439ddfd48d98c97",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 530.4,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_45": {
+    "hash": "9fdf46a1859700fa",
+    "facts": [
+      {
+        "scenario": "income_ended",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_46": {
+    "hash": "2120ad22c6321cad",
+    "facts": [
+      {
+        "scenario": "invoice_payment_confirmed",
+        "amount": 2112.0,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-08-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_47": {
+    "hash": "e53ad04898b4c3c2",
+    "facts": [
+      {
+        "scenario": "refund_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_48": {
+    "hash": "8530eeb7701e2c82",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "bonus",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_49": {
+    "hash": "d4d8e0cb20c7b81c",
+    "facts": [
+      {
+        "scenario": "invoice_payment_confirmed",
+        "amount": 116000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-04-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_50": {
+    "hash": "52802d43961ab7f3",
+    "facts": [
+      {
+        "scenario": "salary_date_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-02-23",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_51": {
+    "hash": "ea19eed6c56b74b8",
+    "facts": [
+      {
+        "scenario": "expense_percent_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": 12.0,
+        "effective_date": null,
+        "cycles": null,
+        "category": "rent",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_52": {
+    "hash": "30f4ac0bc721fb46",
+    "facts": [
+      {
+        "scenario": "unrealized_value_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_53": {
+    "hash": "92e37ed553405fb6",
+    "facts": [
+      {
+        "scenario": "salary_confirmed_foreign_currency",
+        "amount": 696.0,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-05-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_54": {
+    "hash": "83057bd4635a5c8c",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 18700.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-07-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_55": {
+    "hash": "38ce270d159bfd29",
+    "facts": [
+      {
+        "scenario": "expense_percent_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": 12.0,
+        "effective_date": null,
+        "cycles": null,
+        "category": "rent",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_56": {
+    "hash": "bfe956db1f234ec3",
+    "facts": [
+      {
+        "scenario": "invoice_payment_confirmed",
+        "amount": 26180.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-08-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_57": {
+    "hash": "5aff721f60bf5e41",
+    "facts": [
+      {
+        "scenario": "income_ended",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_58": {
+    "hash": "bc8cabd654cc2f07",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 3072.0,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_59": {
+    "hash": "56eb14daf2efa045",
+    "facts": [
+      {
+        "scenario": "refund_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_60": {
+    "hash": "26898fe57e87f0a8",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 158000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "commission",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_61": {
+    "hash": "43d3d7ed74e2981d",
+    "facts": [
+      {
+        "scenario": "expense_percent_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": 12.0,
+        "effective_date": null,
+        "cycles": null,
+        "category": "rent",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_62": {
+    "hash": "128d3142a96a2335",
+    "facts": [
+      {
+        "scenario": "salary_with_one_time_arrears",
+        "amount": 1752.0,
+        "currency": "USD",
+        "secondary_amount": 788.4,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_63": {
+    "hash": "73a72bd145fbe67c",
+    "facts": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 62000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-05-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_64": {
+    "hash": "0c9ee3dc1c45e7aa",
+    "facts": [
+      {
+        "scenario": "payment_receipt",
+        "amount": null,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-04-03",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_65": {
+    "hash": "422af9d5e894d51b",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 8618400.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_66": {
+    "hash": "6f91d9309acb9eae",
+    "facts": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 251000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-01-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_67": {
+    "hash": "505685f6aa072b39",
+    "facts": [
+      {
+        "scenario": "suspicious_request",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_68": {
+    "hash": "68746272ff61345e",
+    "facts": [
+      {
+        "scenario": "invoice_payment_confirmed",
+        "amount": 13420.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-07-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_69": {
+    "hash": "a1d5a387812c6945",
+    "facts": [
+      {
+        "scenario": "failed_debit_will_retry",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_70": {
+    "hash": "cff6f38f055ae306",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 49280.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_71": {
+    "hash": "5276ed73a8bd66f9",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_72": {
+    "hash": "0ec7ea27daaa6afc",
+    "facts": [
+      {
+        "scenario": "invoice_payment_confirmed",
+        "amount": 924.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-12-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_73": {
+    "hash": "1242b9c34b628b4c",
+    "facts": [
+      {
+        "scenario": "salary_date_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-05-23",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_74": {
+    "hash": "27c0eb3c4e33956e",
+    "facts": [
+      {
+        "scenario": "salary_confirmed_foreign_currency",
+        "amount": 1804.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-08-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_75": {
+    "hash": "3ab060464f734577",
+    "facts": [
+      {
+        "scenario": "one_time_income_closed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "prize",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_76": {
+    "hash": "9d076bfa2b9dbf37",
+    "facts": [
+      {
+        "scenario": "invoice_payment_confirmed",
+        "amount": 1419.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-04-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_77": {
+    "hash": "9290ee1da0caaba2",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 164880.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_78": {
+    "hash": "1ac91dd1685686c6",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 35860.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_79": {
+    "hash": "c7302f77814ef27a",
+    "facts": [
+      {
+        "scenario": "unrealized_value_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_80": {
+    "hash": "ca4ee4f3897e551b",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 1815.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-12-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_81": {
+    "hash": "0277a3f9966da3d0",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 2123.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-05-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_82": {
+    "hash": "416460b16dbc6d03",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 33440.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "commission",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_83": {
+    "hash": "b1bb717688a317c1",
+    "facts": [
+      {
+        "scenario": "invoice_payment_confirmed",
+        "amount": 16720.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-08-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_84": {
+    "hash": "bfc651be9def0b8a",
+    "facts": [
+      {
+        "scenario": "income_ended",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_85": {
+    "hash": "730ca58cb97e4614",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 627.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-06-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_86": {
+    "hash": "daf4531f29b5f78f",
+    "facts": [
+      {
+        "scenario": "payment_receipt",
+        "amount": null,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-09-03",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "salary_confirmed_foreign_currency",
+        "amount": 1296.0,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-09-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_87": {
+    "hash": "32c227a82a37b6c3",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 148200.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_88": {
+    "hash": "a7d567a8ef140887",
+    "facts": [
+      {
+        "scenario": "one_time_income_closed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_89": {
+    "hash": "f257574343dba425",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 1188.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-07-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_90": {
+    "hash": "31fe379bdb48eef5",
+    "facts": [
+      {
+        "scenario": "salary_with_one_time_arrears",
+        "amount": 759.0,
+        "currency": "EUR",
+        "secondary_amount": 341.55,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_91": {
+    "hash": "a2b2959518c9cd57",
+    "facts": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 176000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-05-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_92": {
+    "hash": "6576b0570e9750c0",
+    "facts": [
+      {
+        "scenario": "one_time_income_closed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_93": {
+    "hash": "24997e7689a03750",
+    "facts": [
+      {
+        "scenario": "invoice_payment_confirmed",
+        "amount": 15390000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-08-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_94": {
+    "hash": "f50915f7b16e0557",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "medium"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_95": {
+    "hash": "3b7f809fa4e5876a",
+    "facts": [
+      {
+        "scenario": "salary_confirmed_foreign_currency",
+        "amount": 748.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-11-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_96": {
+    "hash": "a803bbb93313e4bc",
+    "facts": [
+      {
+        "scenario": "invoice_payment_confirmed",
+        "amount": 152000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-07-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_97": {
+    "hash": "23e3e07ae9f08cbf",
+    "facts": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 50160.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-09-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_98": {
+    "hash": "402560577607d667",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "bonus",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_99": {
+    "hash": "fce4c89ff3c314c0",
+    "facts": [
+      {
+        "scenario": "one_time_income_closed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_100": {
+    "hash": "c28bd470757e6379",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 2177.28,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_101": {
+    "hash": "72b7e41e55b4b6c2",
+    "facts": [
+      {
+        "scenario": "salary_date_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-05-23",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_102": {
+    "hash": "7b45bdb5d5690c8e",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 1193.4,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": "unpaid_leave",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_103": {
+    "hash": "39d0ba7b13ab2261",
+    "facts": [
+      {
+        "scenario": "income_ended",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_104": {
+    "hash": "5dd093a318ea3951",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 828.0,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-07-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_105": {
+    "hash": "079ad57e66da66d7",
+    "facts": [
+      {
+        "scenario": "expense_percent_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": 12.0,
+        "effective_date": null,
+        "cycles": null,
+        "category": "rent",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_106": {
+    "hash": "05629f3fc7640cdc",
+    "facts": [
+      {
+        "scenario": "charge_disputed_unresolved",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_107": {
+    "hash": "3777dba612897551",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 31900.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-02-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_108": {
+    "hash": "df3069cbbda4c33b",
+    "facts": [
+      {
+        "scenario": "one_time_income_closed",
+        "amount": null,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_109": {
+    "hash": "63636e8b56723d6a",
+    "facts": [
+      {
+        "scenario": "invoice_payment_confirmed",
+        "amount": 2040.0,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-12-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_110": {
+    "hash": "e6fdb607ba890bbb",
+    "facts": [
+      {
+        "scenario": "one_time_income_closed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_111": {
+    "hash": "3683bda0b5242671",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 864.0,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-07-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_112": {
+    "hash": "f40c100becb11594",
+    "facts": [
+      {
+        "scenario": "salary_with_one_time_arrears",
+        "amount": 258000.0,
+        "currency": "INR",
+        "secondary_amount": 116100.0,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_113": {
+    "hash": "cffa02157640088d",
+    "facts": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 1529.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-04-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_114": {
+    "hash": "02e1a2beaa502adc",
+    "facts": [
+      {
+        "scenario": "one_time_income_closed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_115": {
+    "hash": "43ce119116068a02",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 893.75,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_116": {
+    "hash": "d4afefcb1f7c89a5",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 46170000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-09-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_117": {
+    "hash": "2d4b0a4989e24563",
+    "facts": [
+      {
+        "scenario": "one_time_income_closed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "expense reimbursement",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_118": {
+    "hash": "7ba0ee1564c71d0c",
+    "facts": [
+      {
+        "scenario": "foreign_charge_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_119": {
+    "hash": "7514045790fda50d",
+    "facts": [
+      {
+        "scenario": "remaining_household_income",
+        "amount": 1628.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_120": {
+    "hash": "b454d7b7c0ac8b1f",
+    "facts": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 84000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-05-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_121": {
+    "hash": "daa409b3e631f5a5",
+    "facts": [
+      {
+        "scenario": "charge_disputed_unresolved",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_122": {
+    "hash": "fd09ac2d9f406f9a",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 23940000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_123": {
+    "hash": "63d9a4909aad6f52",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_124": {
+    "hash": "6efa695cc44fca27",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 1672.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-06-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_125": {
+    "hash": "d99c6fc76a7011c3",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 26790000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-11-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_126": {
+    "hash": "428efc449ac60716",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 29070000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-07-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_127": {
+    "hash": "1e29224a06873f50",
+    "facts": [
+      {
+        "scenario": "salary_with_one_time_arrears",
+        "amount": 30400000.0,
+        "currency": "IDR",
+        "secondary_amount": 13680000.0,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_128": {
+    "hash": "b0ab870c770adb24",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 44270000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_129": {
+    "hash": "3e722937fe6faf49",
+    "facts": [
+      {
+        "scenario": "income_ended",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_130": {
+    "hash": "4b5d1aa029b6053c",
+    "facts": [
+      {
+        "scenario": "invoice_payment_confirmed",
+        "amount": 2340.0,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-12-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_131": {
+    "hash": "fa7a29882ee79c2d",
+    "facts": [
+      {
+        "scenario": "salary_date_change",
+        "amount": null,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-05-23",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_132": {
+    "hash": "af78840d3b635894",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 137150.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_133": {
+    "hash": "2f2d01ce0f7b7784",
+    "facts": [
+      {
+        "scenario": "refund_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_134": {
+    "hash": "fc059093da385159",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_135": {
+    "hash": "5cb65f284eb36d38",
+    "facts": [
+      {
+        "scenario": "internal_transfer",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_136": {
+    "hash": "8fd7f540e2175e4e",
+    "facts": [
+      {
+        "scenario": "separate_obligations",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_137": {
+    "hash": "6fe4913bd5afe19d",
+    "facts": [
+      {
+        "scenario": "salary_confirmed_foreign_currency",
+        "amount": 1284.0,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-11-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_138": {
+    "hash": "ae60407babb670ce",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 1924.56,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_139": {
+    "hash": "2a8f6fc2aadd6d9c",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 847.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "commission",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_140": {
+    "hash": "9a86e606704aa7ab",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 1731.6,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_141": {
+    "hash": "2770a85b09c2f3b1",
+    "facts": [
+      {
+        "scenario": "invoice_payment_confirmed",
+        "amount": 2376.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-12-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_142": {
+    "hash": "fde7e304f36ca08e",
+    "facts": [
+      {
+        "scenario": "suspicious_request",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_143": {
+    "hash": "2027dd62e19d9c3b",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 59000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-07-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_144": {
+    "hash": "e9bec3ebfceed543",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "bonus",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_145": {
+    "hash": "b71bf88e275c6dae",
+    "facts": [
+      {
+        "scenario": "foreign_charge_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "medium"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_146": {
+    "hash": "605f24153689547f",
+    "facts": [
+      {
+        "scenario": "refund_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_147": {
+    "hash": "bb88f1bca04aead0",
+    "facts": [
+      {
+        "scenario": "expense_percent_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": 12.0,
+        "effective_date": null,
+        "cycles": null,
+        "category": "rent",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_148": {
+    "hash": "b5f45bd98c449826",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 31889.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_149": {
+    "hash": "158b01c828ce2a63",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 145000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-09-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_150": {
+    "hash": "259d8e018d74c95c",
+    "facts": [
+      {
+        "scenario": "one_time_income_closed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "reimbursement",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_151": {
+    "hash": "3225041dfe1094cb",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 627.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-07-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_152": {
+    "hash": "7beda247801ff1ae",
+    "facts": [
+      {
+        "scenario": "refund_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_153": {
+    "hash": "d6ec398ffecfcead",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 1750.32,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_154": {
+    "hash": "2e32a1ec384b8fe1",
+    "facts": [
+      {
+        "scenario": "salary_date_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-08-23",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_155": {
+    "hash": "19bab6ff3d0a1f85",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 1222.65,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_156": {
+    "hash": "515a30a05aa3d8f9",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 38190000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-11-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_157": {
+    "hash": "2a817524a46dd452",
+    "facts": [
+      {
+        "scenario": "charge_disputed_unresolved",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_158": {
+    "hash": "06b2d1faa97ab7f6",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "medium"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_159": {
+    "hash": "636898230d80dbbe",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_160": {
+    "hash": "0a07db994d820671",
+    "facts": [
+      {
+        "scenario": "income_ended",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_161": {
+    "hash": "2efcb77e3c78c3e9",
+    "facts": [
+      {
+        "scenario": "separate_obligations",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_162": {
+    "hash": "2b0bead9965ecea1",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 2024.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-01-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_163": {
+    "hash": "263406e2afeb710a",
+    "facts": [
+      {
+        "scenario": "unrealized_value_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_164": {
+    "hash": "301afa4cf2ba87c4",
+    "facts": [
+      {
+        "scenario": "charge_disputed_unresolved",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_165": {
+    "hash": "671282cd6546ae03",
+    "facts": [
+      {
+        "scenario": "salary_date_change",
+        "amount": null,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-02-23",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_166": {
+    "hash": "dea3d46880f7bf3c",
+    "facts": [
+      {
+        "scenario": "income_ended",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_167": {
+    "hash": "9bef5c1378cb8bd6",
+    "facts": [
+      {
+        "scenario": "refund_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_168": {
+    "hash": "639a2d5131559b8f",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_169": {
+    "hash": "38303f56cc284cf7",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 2424.0,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-07-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_170": {
+    "hash": "9fb8918b2d42258a",
+    "facts": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 1914.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-04-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_171": {
+    "hash": "6d8064ed36fa1ba7",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 1346.4,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_172": {
+    "hash": "b382544111885bc2",
+    "facts": [
+      {
+        "scenario": "refund_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_173": {
+    "hash": "ac4c23bb0266b9a1",
+    "facts": [
+      {
+        "scenario": "invoice_payment_confirmed",
+        "amount": 35200.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-01-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_174": {
+    "hash": "603721cfb6218468",
+    "facts": [
+      {
+        "scenario": "one_time_income_closed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_175": {
+    "hash": "7a264d85a4acf413",
+    "facts": [
+      {
+        "scenario": "expense_percent_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": 12.0,
+        "effective_date": null,
+        "cycles": null,
+        "category": "rent",
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_176": {
+    "hash": "ffd7bf408b55e28a",
+    "facts": [
+      {
+        "scenario": "salary_with_one_time_arrears",
+        "amount": 260000.0,
+        "currency": "INR",
+        "secondary_amount": 117000.0,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_177": {
+    "hash": "168fb17cae2bbb3f",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "bonus",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_178": {
+    "hash": "e6098c890a8ede15",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 30400000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-04-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_179": {
+    "hash": "bd6335b4f0617221",
+    "facts": [
+      {
+        "scenario": "failed_debit_will_retry",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_180": {
+    "hash": "e1bff7f5fbecb5cc",
+    "facts": [
+      {
+        "scenario": "remaining_household_income",
+        "amount": 2827.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_181": {
+    "hash": "c02cb9075de01ab7",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 2772.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-06-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_182": {
+    "hash": "75a6b9adf11d711b",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 16910000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-11-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_183": {
+    "hash": "ff0f847691c5d989",
+    "facts": [
+      {
+        "scenario": "charge_disputed_unresolved",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_184": {
+    "hash": "50a0edecd1855487",
+    "facts": [
+      {
+        "scenario": "refund_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_185": {
+    "hash": "ec5b69a221ff5a58",
+    "facts": [
+      {
+        "scenario": "unrealized_value_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_186": {
+    "hash": "def762d2015efeb4",
+    "facts": [
+      {
+        "scenario": "income_ended",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-03-26",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_187": {
+    "hash": "e16bc281fc169876",
+    "facts": [
+      {
+        "scenario": "remaining_household_income",
+        "amount": 912.0,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_188": {
+    "hash": "cbe5667888890c5b",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 62000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-01-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_189": {
+    "hash": "1985648b9afa1cfa",
+    "facts": [
+      {
+        "scenario": "income_ended",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_190": {
+    "hash": "660d8ad95fc255c6",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 968.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-08-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_191": {
+    "hash": "f7401adabbf70573",
+    "facts": [
+      {
+        "scenario": "salary_confirmed_foreign_currency",
+        "amount": 1680.0,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-11-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_192": {
+    "hash": "686aca9d9caa3155",
+    "facts": [
+      {
+        "scenario": "income_ended",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_193": {
+    "hash": "adc20d9cf17934d8",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 1528.56,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_194": {
+    "hash": "54c1663ff7ce803a",
+    "facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 1548.0,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "commission",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_195": {
+    "hash": "e06a4701e465cfdd",
+    "facts": [
+      {
+        "scenario": "salary_temporary_change",
+        "amount": 702.0,
+        "currency": "USD",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": 1,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_196": {
+    "hash": "9769ec2f7a3fc1df",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 53680.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-12-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_197": {
+    "hash": "fc415e23e306d5c7",
+    "facts": [
+      {
+        "scenario": "charge_disputed_unresolved",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_198": {
+    "hash": "116784198f76de08",
+    "facts": [
+      {
+        "scenario": "failed_debit_will_retry",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_199": {
+    "hash": "bacd57a810339c12",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_200": {
+    "hash": "e20e26158aedc8b6",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 214000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-06-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_201": {
+    "hash": "26dc446243342f00",
+    "facts": [
+      {
+        "scenario": "failed_debit_will_retry",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_202": {
+    "hash": "39c2a9f52b92a9e2",
+    "facts": [
+      {
+        "scenario": "internal_transfer",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_203": {
+    "hash": "da7ea91ae31fca06",
+    "facts": [
+      {
+        "scenario": "remaining_household_income",
+        "amount": 48260000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_204": {
+    "hash": "4545a23881d62277",
+    "facts": [
+      {
+        "scenario": "salary_confirmed_foreign_currency",
+        "amount": 1485.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-05-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_205": {
+    "hash": "79be053036fb2d29",
+    "facts": [
+      {
+        "scenario": "unrealized_value_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_206": {
+    "hash": "eb15a317755a4682",
+    "facts": [
+      {
+        "scenario": "income_ended",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_207": {
+    "hash": "212365b52d5936d7",
+    "facts": [
+      {
+        "scenario": "unrealized_value_change",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_208": {
+    "hash": "e441a6d14707d11a",
+    "facts": [
+      {
+        "scenario": "foreign_charge_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_209": {
+    "hash": "842db48076787220",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "prize",
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_210": {
+    "hash": "195e5bade6bbfa0d",
+    "facts": [
+      {
+        "scenario": "first_salary_confirmed",
+        "amount": 38280.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-11-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_211": {
+    "hash": "9bc15b0a4caa5fbb",
+    "facts": [
+      {
+        "scenario": "salary_with_one_time_arrears",
+        "amount": 103000.0,
+        "currency": "INR",
+        "secondary_amount": 46350.0,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_212": {
+    "hash": "304e44631929fafc",
+    "facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_213": {
+    "hash": "f1facd98e31643e1",
+    "facts": [
+      {
+        "scenario": "internal_transfer",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  },
+  "message_214": {
+    "hash": "f903581d1715fb78",
+    "facts": [
+      {
+        "scenario": "refund_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "agentrouter:deepseek-v4-flash",
+    "error": null
+  },
+  "message_215": {
+    "hash": "decd2e04ddd1933b",
+    "facts": [
+      {
+        "scenario": "refund_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "provider": "openrouter",
+    "error": null
+  }
+}

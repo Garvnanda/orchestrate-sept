@@ -2,22 +2,26 @@
   "agentrouter:deepseek-v4-flash": {
     "provider": "agentrouter",
     "model": "deepseek-v4-flash",
-    "calls": 443,
-    "prompt_tokens": 122639,
-    "completion_tokens": 303379
+    "calls": 192,
+    "prompt_tokens": 162890,
+    "completion_tokens": 48631,
+    "failed_attempts": 45,
+    "failure_reasons": {
+      "http_400": 45
+    }
   },
   "openrouter:nvidia/nemotron-3-super-120b-a12b:free": {
     "provider": "openrouter",
     "model": "nvidia/nemotron-3-super-120b-a12b:free",
     "calls": 45,
-    "prompt_tokens": 12751,
-    "completion_tokens": 16192
+    "prompt_tokens": 38110,
+    "completion_tokens": 19214
   },
-  "agentrouter:glm-5.3": {
-    "provider": "agentrouter",
-    "model": "glm-5.3",
-    "calls": 2,
-    "prompt_tokens": 471,
-    "completion_tokens": 4284
+  "openrouter:nex-agi/nex-n2.5-pro:free": {
+    "provider": "openrouter",
+    "model": "nex-agi/nex-n2.5-pro:free",
+    "calls": 5,
+    "prompt_tokens": 3948,
+    "completion_tokens": 1673
   }
 }

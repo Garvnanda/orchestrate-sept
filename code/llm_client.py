@@ -40,6 +40,17 @@ def _record_usage(provider, model, response):
     save_usage()
 
 
+def _record_failure(provider, model, error):
+    _ensure_usage_loaded()
+    key = f"{provider}:{model}"
+    stats = _usage.setdefault(key, {"provider": provider, "model": model, "calls": 0, "prompt_tokens": 0, "completion_tokens": 0})
+    stats["failed_attempts"] = stats.get("failed_attempts", 0) + 1
+    reason = f"http_{getattr(error, 'status_code', None)}" if getattr(error, "status_code", None) else type(error).__name__
+    stats.setdefault("failure_reasons", {})
+    stats["failure_reasons"][reason] = stats["failure_reasons"].get(reason, 0) + 1
+    save_usage()
+
+
 def get_usage():
     _ensure_usage_loaded()
     return _usage
@@ -55,12 +66,13 @@ USER_AGENT = os.environ.get("AGENTROUTER_USER_AGENT")
 
 MODELS = {
     "extractor": "deepseek-v4-flash",
-    "resolver": "deepseek-v4-flash",
-    "verifier": "glm-5.3",
 }
 
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 OPENROUTER_MODEL = "nvidia/nemotron-3-super-120b-a12b:free"
+# Second read for messages AgentRouter blocks: different model families than the first reader, tried in
+# order (free-tier models get rate-limited upstream; google/gemma-4-*:free returned 429 when tested).
+OPENROUTER_SECOND_MODELS = ("nex-agi/nex-n2.5-pro:free", "dots-studio/dots-3-note-preview:free")
 
 _client = None
 _openrouter_client = None
@@ -112,6 +124,10 @@ def _chat_json(client, model, system_prompt, text_prompt, image_path=None, max_r
             )
         except openai.APIError as e:
             last_error = e
+            _record_failure(provider, model, e)
+            status = getattr(e, "status_code", None)
+            if status is not None and status < 500 and status != 429:
+                break  # deterministic rejection (e.g. content-blocked) — retrying the same request wastes a call
             continue
         _record_usage(provider, model, response)
         if not response.choices or response.choices[0].message.content is None:
@@ -129,18 +145,11 @@ def call_json(role, system_prompt, text_prompt, image_path=None, max_retries=1):
     return _chat_json(get_client(), MODELS[role], system_prompt, text_prompt, image_path, max_retries, provider="agentrouter")
 
 
-def call_json_openrouter(system_prompt, text_prompt, image_path=None, max_retries=1):
+def call_json_openrouter(system_prompt, text_prompt, image_path=None, max_retries=1, model=OPENROUTER_MODEL):
     return _chat_json(
-        get_openrouter_client(), OPENROUTER_MODEL, system_prompt, text_prompt, image_path, max_retries,
+        get_openrouter_client(), model, system_prompt, text_prompt, image_path, max_retries,
         provider="openrouter",
     )
-
-
-def call_json_with_fallback(role, fallback_role, system_prompt, text_prompt, image_path=None):
-    try:
-        return call_json(role, system_prompt, text_prompt, image_path=image_path)
-    except ExtractionError:
-        return call_json(fallback_role, system_prompt, text_prompt, image_path=image_path)
 
 
 def _self_check():

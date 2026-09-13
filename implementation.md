@@ -24,6 +24,25 @@ Ordered task list. Check items off as they're actually built and verified — mo
 - [x] 19. Package `code.zip` — code/ (incl. `evaluation/`), README, requirements.txt, .env.example, design docs. Verified: no `.env`, no `log.txt`, no `dataset/`, no `__pycache__`
 - [x] 20. Judge-interview prep — see done.md's final entry: full `request_01` trace, 3 defendable numbers, 1 monitoring signal
 
+## Post-audit rework (2026-09-13) — approved by the user as "Full rework"
+
+The audit found only 3/25 samples fully matching, 2 invalid rows hidden by a weak validator, a cwd-dependent dataset path, and an unread blank amount (image_09). Steps 2, 5-13 and 15 above were rebuilt; the old modules were deleted.
+
+- [x] R1. Repo-root anchored paths in `data_loader.py`; typed sample fields
+- [x] R2. `scenarios.py` — message scenario vocabulary, schema normalization, hash-keyed caches, uncertainty-triggered second read
+- [x] R3. `scenarios.extract_blank_amounts` — image reader with verifier fallback (fixes image_09)
+- [x] R4. `forecast.py` — payroll stream, recurring expenses, pending items, scenario application, intraday order
+- [x] R5. `balance.py` — suffix-min semantics (payday off-by-one fixed), baseline-breach rule, self-test
+- [x] R6. `decision.py` — deadline gate on every candidate, capacity 0 on baseline breach
+- [x] R7. `spending_changes.py` — rewritten; only when baseline is not_recommended
+- [x] R8. `explanation.py` — deterministic templates (user-approved), self-test on sample wording
+- [x] R9. `validate.py` — strict contract incl. accepted methods and spending-change validity
+- [x] R10. `evaluate_samples.py` — 7-field sample scorer
+- [x] R11. `main.py` — shared-stage failure writes safe-default rows + exit 1; per-row fallback warnings
+- [x] R12. Clean cache-cleared tracked run → `output.csv` + regenerated `usage_report.md` (proxy prices, labeled)
+- [x] R13. `chat_transcript.md` verbatim export (user will choose it or `log.txt`)
+- [x] R14. Rebuild `code.zip`, fresh-unzip run without keys, compare output
+
 ## Blocking items — RESOLVED
 
 - Model IDs confirmed: extractor=`deepseek-v4-flash`, resolver=`gpt-5.6-sol`, verifier=`claude-opus-5`. Only these 3 models available for now.

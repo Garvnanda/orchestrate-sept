@@ -1,0 +1,178 @@
+{
+  "image_01": {
+    "hash": "f37b40e6af42c664",
+    "amount": 4365000.0,
+    "raw": {
+      "amount": 4365000,
+      "currency": "IDR",
+      "document_date": null,
+      "confidence": "high"
+    },
+    "provider": "agentrouter:deepseek-v4-flash"
+  },
+  "image_02": {
+    "hash": "ccd779e5382b1bcf",
+    "amount": 100000.0,
+    "raw": {
+      "amount": 100000,
+      "currency": "INR",
+      "document_date": "2023-08-11",
+      "confidence": "high"
+    },
+    "provider": "agentrouter:deepseek-v4-flash"
+  },
+  "image_03": {
+    "hash": "e5fb0bbcda6cc06f",
+    "amount": 41272.0,
+    "raw": {
+      "amount": 41272.0,
+      "currency": "INR",
+      "document_date": "2026-02-27",
+      "confidence": "high"
+    },
+    "provider": "agentrouter:deepseek-v4-flash"
+  },
+  "image_04": {
+    "hash": "281e7f1e7bd1f98f",
+    "amount": 2854.0,
+    "raw": {
+      "amount": 2854.0,
+      "currency": "INR",
+      "document_date": null,
+      "confidence": "high"
+    },
+    "provider": "agentrouter:deepseek-v4-flash"
+  },
+  "image_05": {
+    "hash": "9abcda5647afb3dc",
+    "amount": 704.05,
+    "raw": {
+      "amount": 704.05,
+      "currency": "INR",
+      "document_date": "2026-02-06",
+      "confidence": "high"
+    },
+    "provider": "agentrouter:deepseek-v4-flash"
+  },
+  "image_06": {
+    "hash": "9055551fbe5940fe",
+    "amount": 1995.0,
+    "raw": {
+      "amount": 1995.0,
+      "currency": "INR",
+      "document_date": null,
+      "confidence": "high"
+    },
+    "provider": "agentrouter:deepseek-v4-flash"
+  },
+  "image_07": {
+    "hash": "f6d30a74355224c0",
+    "amount": 8528.0,
+    "raw": {
+      "amount": 8528,
+      "currency": "INR",
+      "document_date": "2025-10-29",
+      "confidence": "high"
+    },
+    "provider": "agentrouter:deepseek-v4-flash"
+  },
+  "image_08": {
+    "hash": "e28592ad8b4dacd0",
+    "amount": 15339.0,
+    "raw": {
+      "amount": 15339.0,
+      "currency": "INR",
+      "document_date": "2026-07-24",
+      "confidence": "high"
+    },
+    "provider": "agentrouter:deepseek-v4-flash"
+  },
+  "image_09": {
+    "hash": "e0e74e14425d923f",
+    "amount": 723.0,
+    "raw": {
+      "amount": 723.0,
+      "currency": "INR",
+      "document_date": "2026-06-07",
+      "confidence": "high"
+    },
+    "provider": "agentrouter:deepseek-v4-flash"
+  },
+  "image_10": {
+    "hash": "c90f98caf0877083",
+    "amount": 79679.26,
+    "raw": {
+      "amount": 79679.26,
+      "currency": "INR",
+      "document_date": null,
+      "confidence": "high"
+    },
+    "provider": "agentrouter:deepseek-v4-flash"
+  },
+  "image_11": {
+    "hash": "795e000d48428c97",
+    "amount": 3650.0,
+    "raw": {
+      "amount": 3650.0,
+      "currency": "INR",
+      "document_date": "2023-01-19",
+      "confidence": "high"
+    },
+    "provider": "agentrouter:deepseek-v4-flash"
+  },
+  "image_12": {
+    "hash": "e10b0123e66d512d",
+    "amount": 33.5,
+    "raw": {
+      "amount": 33.5,
+      "currency": "USD",
+      "document_date": "2025-01-10",
+      "confidence": "high"
+    },
+    "provider": "agentrouter:deepseek-v4-flash"
+  },
+  "image_13": {
+    "hash": "1ae54b378a9556d9",
+    "amount": 2298.0,
+    "raw": {
+      "amount": 2298,
+      "currency": "INR",
+      "document_date": null,
+      "confidence": "high"
+    },
+    "provider": "agentrouter:deepseek-v4-flash"
+  },
+  "image_14": {
+    "hash": "bf88e4aa35e6f363",
+    "amount": 4593.0,
+    "raw": {
+      "amount": 4593.0,
+      "currency": "INR",
+      "document_date": null,
+      "confidence": "high"
+    },
+    "provider": "agentrouter:deepseek-v4-flash"
+  },
+  "image_15": {
+    "hash": "0c0fe3d79e670f2b",
+    "amount": 9968.0,
+    "raw": {
+      "amount": 9968.0,
+      "currency": "INR",
+      "document_date": "2026-06-07",
+      "confidence": "high"
+    },
+    "provider": "agentrouter:deepseek-v4-flash"
+  },
+  "image_16": {
+    "hash": "2665cf731a861ddb",
+    "amount": 393.22,
+    "raw": {
+      "amount": 393.22,
+      "currency": "INR",
+      "document_date": "2026-09-03",
+      "confidence": "high"
+    },
+    "provider": "agentrouter:deepseek-v4-flash"
+  }
+}

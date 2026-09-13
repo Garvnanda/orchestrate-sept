@@ -26,6 +26,16 @@
 - Every stage has a defined fallback: if extraction fails, evidence is simply not applied (event stays as originally recorded) rather than crashing. If the decision engine hits an unexpected state, it falls back to a conservative safe default row (`not_recommended`, `amount_safe_to_pay=0`, explanation stating why) rather than leaving any field blank.
 - The standalone validator (technical.md) is the last line of defense — it runs before the file write and hard-blocks any incomplete/invalid row from reaching `output.csv`.
 
+## Post-audit hardening (2026-09-13)
+
+- **Schema at the boundary.** Model output is normalized in `scenarios.normalize_scenarios`: unknown scenario names dropped, amounts coerced to numbers, dates parsed, confidence restricted to high/medium/low. Before this, one malformed fact could crash the whole run.
+- **Scam / manipulative messages.** A message cannot add income on its own say-so: income-raising facts that are not high confidence need a second model to agree; on disagreement they are dropped (financially safer). Pending credits and irregular income are never projected regardless of what a message claims.
+- **Hash-keyed caches.** Cache entries store sha256 of the message text / image bytes. Changed input is re-read instead of silently reusing a stale answer.
+- **Failed attempts are recorded.** `usage_log.json` counts failed calls per model with the reason (e.g. `http_400` for content blocks). Deterministic 4xx rejections are not retried (except 429).
+- **No model-written text in output.** Explanations are templates, so a message cannot inject wording into `output.csv`.
+- **Failure is loud.** Shared-stage failure writes safe-default rows for all requests and exits 1; per-row fallbacks print the reason to stderr.
+- **Transcript export** (`chat_transcript.md`) redacts `.env` key values, `sk-` keys, bearer tokens and email addresses, and refuses to write if a key value is still present.
+
 ## Dependency hygiene
 
 - stdlib-only data layer (per idea.md) minimizes supply-chain surface — fewer third-party packages to vet or that could fail to install in the grading environment.

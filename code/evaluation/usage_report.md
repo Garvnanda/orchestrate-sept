@@ -1,35 +1,48 @@
 # Token Usage & Cost Report
 
-Covers the final full-dataset run that produced the submitted `output.csv` (250/250 requests, 0 safe-default fallbacks). Numbers below are read directly from each API response's `usage` field (real, not estimated) during that run — see `usage_log.json` in this same folder for the raw accumulator this table is built from.
+Final full-dataset run that produced the submitted `output.csv`: `python code/main.py`, started 2026-09-13T08:09:41+05:30, finished 2026-09-13T08:21:55+05:30, with every LLM cache cleared first, so every model call was really made in this run. Token counts come from each API response's `usage` field, accumulated by `code/llm_client.py` into `usage_log.json` (same folder).
 
-## Model providers and roles
+## Where models are used
 
-| Role | Model | Provider |
-|---|---|---|
-| Extractor (every message + image; also reused for the explanation rewrite pass) | `deepseek-v4-flash` | AgentRouter (`https://agentrouter.org/v1`) |
-| Resolver (fires only on a detected cross-source conflict) | `deepseek-v4-flash` | AgentRouter |
-| Verifier (fires only on a resolver/hierarchy mismatch or a low-confidence fact actually used) | `glm-5.3` | AgentRouter |
-| Fallback extractor (only for content-blocked messages AgentRouter's own moderation rejected on every AgentRouter model/prompt variant tried) | `nvidia/nemotron-3-super-120b-a12b:free` | OpenRouter (`https://openrouter.ai/api/v1`) |
+Models only read unstructured evidence into a fixed JSON schema. All money math, forecasting, plan selection, validation and the explanation text are deterministic Python and make no model calls, so the per-request decision stage costs 0 tokens.
+
+| Stage | Model | Provider | When it runs |
+|---|---|---|---|
+| Blank-amount image reading | `deepseek-v4-flash` | AgentRouter | Once per image linked to an event with a blank amount |
+| Message scenario reading | `deepseek-v4-flash` | AgentRouter | Once per message |
+| Content-blocked fallback | `nvidia/nemotron-3-super-120b-a12b:free` | OpenRouter | Only for messages AgentRouter's moderation rejects |
+| Second read of uncertain facts | `deepseek-v4-flash` (independent second call) | AgentRouter | Only for AgentRouter-read facts not marked high confidence |
+| Second read of uncertain facts on content-blocked messages | `nex-agi/nex-n2.5-pro:free` (then `dots-studio/dots-3-note-preview:free` if unavailable) | OpenRouter | Only for OpenRouter-read facts not marked high confidence |
 
 ## Per-model usage (this run)
 
-| Model | Provider | Calls | Prompt tokens | Completion tokens | Total tokens |
-|---|---|---:|---:|---:|---:|
-| deepseek-v4-flash | AgentRouter | 443 | 122,639 | 303,379 | 426,018 |
-| glm-5.3 | AgentRouter | 2 | 471 | 4,284 | 4,755 |
-| nvidia/nemotron-3-super-120b-a12b:free | OpenRouter | 45 | 12,751 | 16,192 | 28,943 |
-| **Total** | | **490** | **135,861** | **323,855** | **459,716** |
+| Model | Provider | Successful calls | Input tokens | Output tokens | Total tokens | Failed attempts (reason) | Est. cost (proxy) |
+|---|---|---:|---:|---:|---:|---|---:|
+| `deepseek-v4-flash` | AgentRouter | 192 | 162,890 | 48,631 | 211,521 | 45 (http_400×45) | $0.0660 |
+| `nvidia/nemotron-3-super-120b-a12b:free` | OpenRouter | 45 | 38,110 | 19,214 | 57,324 | 0 (—) | $0.0000 |
+| `nex-agi/nex-n2.5-pro:free` | OpenRouter | 5 | 3,948 | 1,673 | 5,621 | 0 (—) | $0.0000 |
+| **Total** | | **242** | **204,948** | **69,518** | **274,466** | **45** | **$0.0660** |
 
-## Per-request
+Message readers used: openrouter: 45, agentrouter:deepseek-v4-flash: 170 (215 messages). Images read: 16. Second-read outcomes: readers agree: 11.
 
-- 250 requests processed.
-- 459,716 total tokens ÷ 250 requests = **1,838.9 tokens/request average**.
-- Call breakdown by pipeline stage for this run: 16 image extractions + 215 message extractions (170 succeeded directly on `deepseek-v4-flash`, 45 needed the OpenRouter fallback after AgentRouter's content filter rejected them on every AgentRouter model/prompt variant tried) + 7 resolver calls (only where a real cross-source conflict was detected, out of 25,342 events) + 2 verifier calls (only where the resolver disagreed with the coded hierarchy) + 250 explanation rewrites (one per request) = 490 successful calls total.
+## Per request
 
-## Cost
+- Requests processed: 250.
+- Average tokens per request: 274,466 ÷ 250 = **1,097.9**.
+- Average model calls per request: 242 ÷ 250 = **0.97**.
+- Estimated cost per request (proxy): **$0.000264**.
 
-Not computed as a dollar figure here: both `deepseek-v4-flash` and `glm-5.3` are accessed through the user's own AgentRouter account (a credits/subscription arrangement with no public per-token price exposed via the API), and `nvidia/nemotron-3-super-120b-a12b:free` on OpenRouter is explicitly the zero-cost free tier. Inventing a per-token rate for models without a verified public price would misrepresent actual cost rather than clarify it — the token counts above are the real, measured basis for computing cost once an actual billing rate is available for the AgentRouter account used.
+Model calls are per evidence item, not per request, and results are cached by content hash. A rerun with unchanged dataset files makes 0 calls.
 
-## Methodology note — what this table does and doesn't include
+## Cost basis — proxy list prices, not billed amounts
 
-Every number above comes from a successful API response's own `usage` field, tracked automatically in `code/llm_client.py` and persisted to `evaluation/usage_log.json` after every call. It does **not** include failed/rejected API attempts: AgentRouter's content-moderation filter blocked the 45 messages above on every AgentRouter model and prompt variant tried (direct, alternate model, and a translation retry) before the OpenRouter fallback succeeded — those blocked attempts return an HTTP error with no `usage` payload, so their (real, but API-unexposed) token cost isn't reflected here. This was a deliberate build-time discovery (see `done.md`'s step 5 entries for the full diagnostic trail), not a run-time occurrence — a cold run with warm caches, like the one that produced this report, makes no more than one attempt per already-known-good item.
+AgentRouter bills against account credits and exposes no per-token price. The dollar figures above therefore use **proxy list prices**, listed here so anyone can recompute:
+
+| Model | Input $/1M | Output $/1M | Proxy source |
+|---|---:|---:|---|
+| `deepseek-v4-flash` | $0.28 | $0.42 | DeepSeek's public API list price for its current chat model (V3.2 class) |
+| `nvidia/nemotron-3-super-120b-a12b:free` | $0.00 | $0.00 | OpenRouter `:free` tier, $0 by definition |
+| `nex-agi/nex-n2.5-pro:free` | $0.00 | $0.00 | OpenRouter `:free` tier, $0 by definition |
+| `dots-studio/dots-3-note-preview:free` | $0.00 | $0.00 | OpenRouter `:free` tier, $0 by definition |
+
+Failed attempts (content-blocked HTTP errors, empty responses) return no `usage` payload. They are counted above but carry no token or cost figure.

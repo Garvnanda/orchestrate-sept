@@ -39,7 +39,11 @@ class Dataset:
     sample_requests: list
 
 
-def load_all(dataset_dir="dataset"):
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATASET_DIR = os.path.join(REPO_ROOT, "dataset")
+
+
+def load_all(dataset_dir=DATASET_DIR):
     def path(name):
         return os.path.join(dataset_dir, name)
 
@@ -104,6 +108,9 @@ def load_all(dataset_dir="dataset"):
             images_by_request.setdefault(row["request_id"], []).append(row)
 
     sample_requests = _read_rows(path("sample_requests.csv"))
+    for row in sample_requests:
+        row["requested_amount"] = _float_or_none(row["requested_amount"])
+        row["allows_partial_payment"] = row["allows_partial_payment"].strip().lower() == "true"
 
     return Dataset(
         profiles=profiles,

@@ -1,0 +1,739 @@
+{
+  "message_02": {
+    "hash": "e7e93990446ab73d",
+    "first": [
+      {
+        "scenario": "salary_with_one_time_arrears",
+        "amount": null,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "medium"
+      }
+    ],
+    "first_provider": "openrouter",
+    "second": [
+      {
+        "scenario": "salary_with_one_time_arrears",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "medium"
+      }
+    ],
+    "second_provider": "openrouter:nex-agi/nex-n2.5-pro:free",
+    "error": null,
+    "outcome": "readers agree",
+    "final_facts": [
+      {
+        "scenario": "salary_with_one_time_arrears",
+        "amount": null,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "medium"
+      }
+    ]
+  },
+  "message_08": {
+    "hash": "8884c7ee403a757e",
+    "first": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 38760000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "medium"
+      }
+    ],
+    "first_provider": "openrouter",
+    "second": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 38760000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "second_provider": "openrouter:nex-agi/nex-n2.5-pro:free",
+    "error": null,
+    "outcome": "readers agree",
+    "final_facts": [
+      {
+        "scenario": "salary_amount_change",
+        "amount": 38760000.0,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": "IDR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "medium"
+      }
+    ]
+  },
+  "message_10": {
+    "hash": "d406d9cd7df129b6",
+    "first": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 2717.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-08-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ],
+    "first_provider": "agentrouter:deepseek-v4-flash",
+    "second": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 2717.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-08-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "high"
+      }
+    ],
+    "second_provider": "agentrouter:deepseek-v4-flash",
+    "error": null,
+    "outcome": "readers agree",
+    "final_facts": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 2717.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-08-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "message_63": {
+    "hash": "73a72bd145fbe67c",
+    "first": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 62000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-05-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ],
+    "first_provider": "agentrouter:deepseek-v4-flash",
+    "second": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 62000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-05-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "high"
+      }
+    ],
+    "second_provider": "agentrouter:deepseek-v4-flash",
+    "error": null,
+    "outcome": "readers agree",
+    "final_facts": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 62000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-05-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "message_91": {
+    "hash": "a2b2959518c9cd57",
+    "first": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 176000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-05-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ],
+    "first_provider": "agentrouter:deepseek-v4-flash",
+    "second": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 176000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-05-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "high"
+      }
+    ],
+    "second_provider": "agentrouter:deepseek-v4-flash",
+    "error": null,
+    "outcome": "readers agree",
+    "final_facts": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 176000.0,
+        "currency": "INR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2025-05-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "message_94": {
+    "hash": "f50915f7b16e0557",
+    "first": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "medium"
+      }
+    ],
+    "first_provider": "openrouter",
+    "second": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "second_provider": "openrouter:nex-agi/nex-n2.5-pro:free",
+    "error": null,
+    "outcome": "readers agree",
+    "final_facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "medium"
+      }
+    ]
+  },
+  "message_97": {
+    "hash": "23e3e07ae9f08cbf",
+    "first": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 50160.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-09-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ],
+    "first_provider": "agentrouter:deepseek-v4-flash",
+    "second": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 50160.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-09-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ],
+    "second_provider": "agentrouter:deepseek-v4-flash",
+    "error": null,
+    "outcome": "readers agree",
+    "final_facts": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 50160.0,
+        "currency": "ZAR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2024-09-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "message_113": {
+    "hash": "cffa02157640088d",
+    "first": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 1529.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-04-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ],
+    "first_provider": "agentrouter:deepseek-v4-flash",
+    "second": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 1529.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-04-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "high"
+      }
+    ],
+    "second_provider": "agentrouter:deepseek-v4-flash",
+    "error": null,
+    "outcome": "readers agree",
+    "final_facts": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 1529.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-04-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "message_145": {
+    "hash": "b71bf88e275c6dae",
+    "first": [
+      {
+        "scenario": "foreign_charge_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "medium"
+      }
+    ],
+    "first_provider": "openrouter",
+    "second": [
+      {
+        "scenario": "foreign_charge_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "second_provider": "openrouter:nex-agi/nex-n2.5-pro:free",
+    "error": null,
+    "outcome": "readers agree",
+    "final_facts": [
+      {
+        "scenario": "foreign_charge_pending",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "medium"
+      }
+    ]
+  },
+  "message_158": {
+    "hash": "06b2d1faa97ab7f6",
+    "first": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "medium"
+      }
+    ],
+    "first_provider": "openrouter",
+    "second": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      }
+    ],
+    "second_provider": "openrouter:nex-agi/nex-n2.5-pro:free",
+    "error": null,
+    "outcome": "readers agree",
+    "final_facts": [
+      {
+        "scenario": "income_pending_unconfirmed",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": null,
+        "confidence": "medium"
+      }
+    ]
+  },
+  "message_170": {
+    "hash": "9fb8918b2d42258a",
+    "first": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 1914.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-04-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ],
+    "first_provider": "agentrouter:deepseek-v4-flash",
+    "second": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 1914.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-04-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-04-01",
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ],
+    "second_provider": "agentrouter:deepseek-v4-flash",
+    "error": null,
+    "outcome": "readers agree",
+    "final_facts": [
+      {
+        "scenario": "salary_resumes",
+        "amount": 1914.0,
+        "currency": "EUR",
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": "2026-04-15",
+        "cycles": null,
+        "category": null,
+        "confidence": "high"
+      },
+      {
+        "scenario": "new_recurring_expense",
+        "amount": null,
+        "currency": null,
+        "secondary_amount": null,
+        "percent": null,
+        "effective_date": null,
+        "cycles": null,
+        "category": "childcare",
+        "confidence": "medium"
+      }
+    ]
+  }
+}
